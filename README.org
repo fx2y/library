@@ -1,0 +1,112 @@
+#+TITLE: How might we strive to be a better X
+#+DESCRIPTION: Curated resources of how might we strive to be a better X
+
+* how-might-we-strive-to-be-a-better-x
+** personal
+*** servant-of-Rabb
+**** reconnect-with-the-quran ([[http://www.qtafsir.com/index.php][read]] [[https://archive.org/details/English-MaarifulQuran/page/n17][read]] [[https://archive.org/details/TafseerOfQuranByNoumanAliKhan][listen]])
+*** family-contributor
+**** ([[https://www.babycenter.com/][pregnancy baby toddler preschooler bigkid]])
+**** [[https://homeschoolbase.com/free-homeschool-curriculum/][modern-resource-for-homeschooling]] ([[https://homeschoolbase.com/100-best-educational-websites-2018/][edutech]])
+***** [[https://www.khanacademy.org/][khan-academy]]
+***** [[https://sites.google.com/site/learninglynxclassroom/][learning-lynx-classroom]]
+***** [[https://www.education.com/][pre-until-k12]]
+***** [[http://grownups.pbskids.org/][pbs-kids-for-parents]]
+**** [[http://fallibleideas.com/taking-children-seriously][taking-children-seriously]]
+*** polyglot-learner
+**** [[https://fs.blog/][effective-learning]] (read [[https://fs.blog/the-knowledge-project/][listen]])
+***** for-effective-action (teach innovate)
+**** ([[https://www.npr.org/podcasts/510325/the-indicator-from-planet-money][business]] ([[https://www.npr.org/podcasts/510313/how-i-built-this][alt]]) [[https://www.npr.org/podcasts/510289/planet-money][economics]])
+**** ([[http://omegataupodcast.net/][science technology engineering]] [[https://www.3blue1brown.com/][mathematics]])
+**** ([[https://www.edge.org/][general]] ([[https://www.edge.org/conversations][listen]]))
+**** helpful-tools ([[https://www.youtube.com/user/cafemusicbgmchannel/videos][productivity-music]])
+*** real-world-development (startup-leader design-thinker engineer)
+**** [[https://www.worldbank.org/en/understanding-poverty][real-world-development]] ([[http://blogs.worldbank.org/][blog]] [[https://blogs.worldbank.org/category/topics/information-and-communication-technologies][ict]] [[http://blogs.worldbank.org/category/tags/development-impact-links][weekly-digest]] [[https://openknowledge.worldbank.org/handle/10986/4/discover][books]])
+**** [[https://www.startupschool.org/library][startup]] ([[https://rework.withgoogle.com/][alt]])
+**** [[https://dschool.stanford.edu/resources/design-thinking-bootleg][design-thinking]] ([[http://www.designkit.org/][kit]] [[https://designsprintkit.withgoogle.com/introduction/overview][design-sprint-kit]])
+**** investment grant ([[https://angin.id/][indonesia]] [[https://www.expo2020dubai.com/expo-live/Innovation][until-2020]])
+** professional
+*** computer-programming
+**** [[https://rosettacode.org/wiki/Category:Programming_Tasks][programming-tasks]] ([[https://rosettacode.org/wiki/Category:Basic_language_learning][basic-language-learning]] [[https://rosettacode.org/wiki/Category:Solutions_by_Programming_Task][per-category]] [[https://github.com/fx2y/programming-tasks][my-personal-organized-content]])
+***** programming-languages ([[https://github.com/enocom/gopher-reading-list/blob/master/README.md][go]] [[https://github.com/brson/rust-anthology/blob/master/master-list.md][rust]] python [[https://github.com/leonardomso/33-js-concepts/blob/master/README.md][javascript]] kotlin swift clojure nim racket)
+***** [[https://learnxinyminutes.com/][quickstart]]
+**** algorithms data-structures ([[https://github.com/TheAlgorithms/Python][python]] [[https://github.com/trekhleb/javascript-algorithms/blob/master/README.md][javascript]])
+**** [[https://github.com/tuvtran/project-based-learning/blob/master/README.md][project-based-learning]]  [[https://github.com/danistefanovic/build-your-own-x/blob/master/README.md][build-your-own-x]] [[https://github.com/kanaka/mal][make-a-lisp]]
+**** [[https://github.com/fx2y/devbox/blob/master/README.org][my-personal-devbox]]
+**** [[https://github.com/k88hudson/git-flight-rules/blob/master/README.md][git-flight-rules]]
+**** [[https://www.amazon.com/dp/0984782850][cracking-the-coding-interview]]
+**** [[https://github.com/caiorss/Functional-Programming][functional-programming]]
+*** software-system (design architecture)
+**** [[https://github.com/DovAmir/awesome-design-patterns/blob/master/README.md][design-patterns]]
+***** go ([[https://checkmarx.gitbooks.io/go-scp/][secure-coding-practice]] [[https://github.com/bxcodec/go-clean-arch][clean-arhitecture]] [[https://github.com/eapache/go-resiliency][resiliency]])
+***** javascript ([[https://shichuan.github.io/javascript-patterns/][patterns]] [[https://tcorral.github.io/Design-Patterns-in-Javascript/][design-patterns]] [[https://mjavascript.com/][modular]])
+***** [[http://www.aosabook.org/en/index.html][architecture-of-open-source-app]]
+***** [[http://gameprogrammingpatterns.com/contents.html][game-programming-patterns]]
+***** [[https://github.com/Mahmoudz/Porto/blob/master/README.md][modern-software-architectural-pattern]]
+**** [[https://github.com/donnemartin/system-design-primer/blob/master/README.md][the-system-design-primer]]
+**** [[https://pdos.csail.mit.edu/6.824/schedule.html][distributed-systems]] ([[http://dsrg.pdos.csail.mit.edu/papers/][papers]])
+**** [[https://github.com/binhnguyennus/awesome-scalability/blob/master/README.md][(scalable available stable performant intelligent) system-design-patterns]] ([[https://martinfowler.com/][blog]])
+***** [[https://github.com/Randommood/Strangeloop2015/blob/master/README.md][resilient-distributed-systems]]
+*** full-stack-software-development ([[https://github.com/gothinkster/realworld/blob/master/README.md][quickstart]])
+**** [[https://developer.mozilla.org/en-US/docs/Web][front-end-software-development]] ([[https://github.com/thedaviddias/Front-End-Checklist/blob/master/README.md][checklist]])
+***** [[https://reactjs.org/docs/getting-started.html][react]] ([[https://reactjs.org/tutorial/tutorial.html][tutorial]] [[https://krasimir.gitbooks.io/react-in-patterns/content/][pattern]] [[https://vasanthk.gitbooks.io/react-bits/][pattern]] [[https://github.com/planningcenter/react-patterns/blob/master/README.md][pattern]] [[https://github.com/chantastic/reactpatterns/blob/master/README.markdown][pattern]] [[https://github.com/kentcdodds/advanced-react-patterns][pattern]] [[https://github.com/enaqx/awesome-react/blob/master/README.md][curated]] [[https://github.com/brillout/awesome-react-components/blob/master/readme.md][curated-component]])
+***** (ui ux) design ([[https://ant.design/docs/react/introduce][ant-design]] ([[https://mobile.ant.design/docs/react/introduce][mobile]] [[https://pro.ant.design/docs/getting-started][pro]]) [[https://getmdl.io/index.html][material-design-lite]])
+***** [[https://developer.mozilla.org/en-US/docs/Web/Apps/Progressive][progressive-web-apps]] ([[https://preactjs.com/guide/getting-started][preact]]) ([[https://github.com/hemanth/awesome-pwa/blob/master/README.md][curated]])
+***** (static server-side-rendering) ([[https://nextjs.org/learn/][nextjs]])
+***** [[https://www.howtographql.com/][graphql]] ([[https://www.apollographql.com/docs/react/][apollo-client]])
+***** [[https://www.netlify.com/][deployment]]
+**** mobile-software-development
+***** native-apps ([[https://flutter.io/docs/][flutter]] [[https://facebook.github.io/react-native/docs/getting-started][react-native]] ([[https://github.com/madhavanmalolan/awesome-reactnative-ui/blob/master/README.md][curated-component]]))
+**** back-end-software-development
+***** [[https://github.com/amio/awesome-micro/blob/master/README.md][asynchronous-http-microservices (zeit-micro)]]
+***** node ([[http://thenodeway.io/][best-practice]] [[https://github.com/i0natan/nodebestpractices/blob/master/README.md][best-practice]])
+***** [[https://www.prisma.io/docs/][graphql-database-layer (prisma)]]
+***** databases ([[https://selectstarsql.com/][interactive-tutorial]])
+****** relational (postgres mysql ms-sql oracle cockroach)
+****** document (mongodb arangodb)
+****** graph (neo4j dgraph neptune)
+****** analytical (druid)
+****** time-series (influxdb timescale)
+****** key-value (cassandra dynamodb)
+****** search (elastic-search)
+****** in-memory (redis)
+***** ([[https://actix.rs/book/actix/][actor]] [[https://actix.rs/docs/][web]]) framework-in-rust
+**** devops
+***** global-serverless-deployments ([[https://zeit.co/docs][zeit-now]] ([[https://github.com/zeit/now-examples][example]] [[https://github.com/zeit/awesome-zeit/blob/master/readme.md][curated]]))
+***** cloud-application-platform ([[https://devcenter.heroku.com/][heroku]] aws azure gcp)
+***** cloud-native-engineering [[https://github.com/gofunct/cloudnative-engineer/blob/master/README.md][cheatsheet]]
+***** [[https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/README.md][kubernetes]] ([[https://github.com/ramitsurana/awesome-kubernetes][curated]] [[https://www.magicsandbox.com/][interactive-tutorial]])
+**** helpful-tools
+***** [[http://deployd.com/][build-an-api]]
+*** [[https://teachyourselfcs.com/][computer-science]]
+**** [[https://paperswelove.org/][papers]] ([[https://github.com/zziz/pwc/blob/master/README.md][with-code]])
+**** [[https://intensecrypto.org/public/][cryptography]] ([[https://github.com/google/tink][library]])
+**** security ([[https://github.com/maestron/botnets][tools]])
+*** [[http://ai.berkeley.edu/course_schedule.html][artificial-intelligence]] [[http://cs229.stanford.edu/syllabus.html][machine-learning]] ([[https://see.stanford.edu/Course/CS229/47][lectures]])
+**** [[https://machinelearningmastery.com/start-here/][machine-learning-mastery]] ([[https://machinelearningmastery.com/blog/][tutorials]])
+**** [[http://course.fast.ai][fast-ai]]
+**** [[https://www.kaggle.com/learn/overview][kaggle]] ([[https://www.kaggle.com/datasets][dataset]])
+**** [[https://news.ycombinator.com/item?id=17919297][dataset]]
+**** [[https://github.com/bharathgs/Awesome-pytorch-list/blob/master/README.md][pytorch]]
+**** specialization
+***** [[https://github.com/Avik-Jain/100-Days-Of-ML-Code/blob/master/README.md][machine-learning]] ([[https://github.com/eriklindernoren/ML-From-Scratch][from-scratch]])
+***** [[https://github.com/astorfi/Deep-Learning-World/blob/master/README.rst][deep-learning]]
+***** [[https://github.com/andri27-ts/60_Days_RL_Challenge][deep-reinforcement-learning]] ([[https://github.com/google/dopamine][framework]])
+***** natural-language-processing (tools ([[https://spacy.io/][spacy]] [[https://rasa.com/][rasa]] [[https://github.com/axa-group/nlp.js][js-lib]]))
+*** behavioral-economics
+**** [[http://theory.stanford.edu/~tim/f18/f18.html][incentives-in-computer-science]]
+***** twenty-lectures-on-algorithmic-game-theory
+***** economics-and-computation
+***** networks-crowds-and-markets
+**** [[https://www.robertsapolskyrocks.com/hum-bio.html][human-behavioral-biology]]
+***** behave the-biology-of-humans-at-our-best-and-worst
+***** chaos making-a-new-science
+*** [[https://github.com/ripienaar/free-for-dev/blob/master/README.md][helpful-tools]] ([[https://github.com/cjbarber/ToolsOfTheTrade/blob/master/readme.md][alt]])
+*** uncategorized
+**** [[https://github.com/vitalets/github-trending-repos][curated-github-trending]]
+**** interesting-projects
+***** [[https://github.com/GoogleCloudPlatform/open-match][open-match]]
+***** [[https://github.com/montferret/ferret][declarative-web-scraping]]
+***** [[https://github.com/xi-editor/xi-editor][modern-editor]]
+***** [[https://github.com/schollz/croc][secure-p2p-transfer]]
+***** [[https://fuchsia.googlesource.com/][modern-operating-system]]
