@@ -7,11 +7,11 @@
   - [professional](#sec-1-2)
     - [computer-programming](#sec-1-2-1)
     - [software-system (design architecture)](#sec-1-2-2)
-    - [full-stack-software-development ([quickstart](https://github.com/gothinkster/realworld/blob/master/README.md))](#sec-1-2-3)
-    - [[computer-science](https://teachyourselfcs.com/)](#sec-1-2-4)
-    - [[artificial-intelligence](http://ai.berkeley.edu/course_schedule.html) [machine-learning](http://cs229.stanford.edu/syllabus.html) ([lectures](https://see.stanford.edu/Course/CS229/47))](#sec-1-2-5)
+    - [full-stack-software-development](#sec-1-2-3)
+    - [computer-science](#sec-1-2-4)
+    - [artificial-intelligence machine-learning](#sec-1-2-5)
     - [behavioral-economics](#sec-1-2-6)
-    - [[helpful-tools](https://github.com/ripienaar/free-for-dev/blob/master/README.md) ([alt](https://github.com/cjbarber/ToolsOfTheTrade/blob/master/readme.md))](#sec-1-2-7)
+    - [helpful-tools](#sec-1-2-7)
     - [uncategorized](#sec-1-2-8)
 
 # how-might-we-strive-to-be-a-better-x<a id="sec-1"></a>
@@ -106,9 +106,11 @@
 
     1.  [resilient-distributed-systems](https://github.com/Randommood/Strangeloop2015/blob/master/README.md)
 
-### full-stack-software-development ([quickstart](https://github.com/gothinkster/realworld/blob/master/README.md))<a id="sec-1-2-3"></a>
+### full-stack-software-development<a id="sec-1-2-3"></a>
 
-1.  [front-end-software-development](https://developer.mozilla.org/en-US/docs/Web) ([checklist](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README.md))
+1.  [quickstart](https://github.com/gothinkster/realworld/blob/master/README.md)
+
+2.  [front-end-software-development](https://developer.mozilla.org/en-US/docs/Web) ([checklist](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README.md))
 
     1.  [react](https://reactjs.org/docs/getting-started.html) ([tutorial](https://reactjs.org/tutorial/tutorial.html) [pattern](https://krasimir.gitbooks.io/react-in-patterns/content/) [pattern](https://vasanthk.gitbooks.io/react-bits/) [pattern](https://github.com/planningcenter/react-patterns/blob/master/README.md) [pattern](https://github.com/chantastic/reactpatterns/blob/master/README.markdown) [pattern](https://github.com/kentcdodds/advanced-react-patterns) [curated](https://github.com/enaqx/awesome-react/blob/master/README.md) [curated-component](https://github.com/brillout/awesome-react-components/blob/master/readme.md))
 
@@ -122,11 +124,11 @@
 
     6.  [deployment](https://www.netlify.com/)
 
-2.  mobile-software-development
+3.  mobile-software-development
 
     1.  native-apps ([flutter](https://flutter.io/docs/) [react-native](https://facebook.github.io/react-native/docs/getting-started) ([curated-component](https://github.com/madhavanmalolan/awesome-reactnative-ui/blob/master/README.md)))
 
-3.  back-end-software-development
+4.  back-end-software-development
 
     1.  [asynchronous-http-microservices (zeit-micro)](https://github.com/amio/awesome-micro/blob/master/README.md)
 
@@ -154,7 +156,7 @@
 
     5.  ([actor](https://actix.rs/book/actix/) [web](https://actix.rs/docs/)) framework-in-rust
 
-4.  devops
+5.  devops
 
     1.  global-serverless-deployments ([zeit-now](https://zeit.co/docs) ([example](https://github.com/zeit/now-examples) [curated](https://github.com/zeit/awesome-zeit/blob/master/readme.md)))
 
@@ -164,31 +166,35 @@
 
     4.  [kubernetes](https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/README.md) ([curated](https://github.com/ramitsurana/awesome-kubernetes) [interactive-tutorial](https://www.magicsandbox.com/))
 
-5.  helpful-tools
+6.  helpful-tools
 
     1.  [build-an-api](http://deployd.com/)
 
-### [computer-science](https://teachyourselfcs.com/)<a id="sec-1-2-4"></a>
+### computer-science<a id="sec-1-2-4"></a>
 
-1.  [papers](https://paperswelove.org/) ([with-code](https://github.com/zziz/pwc/blob/master/README.md))
+1.  [teach-yourself-computer-science](https://teachyourselfcs.com/)
 
-2.  [cryptography](https://intensecrypto.org/public/) ([library](https://github.com/google/tink))
+2.  [papers](https://paperswelove.org/) ([with-code](https://github.com/zziz/pwc/blob/master/README.md))
 
-3.  security ([tools](https://github.com/maestron/botnets))
+3.  [cryptography](https://intensecrypto.org/public/) ([library](https://github.com/google/tink))
 
-### [artificial-intelligence](http://ai.berkeley.edu/course_schedule.html) [machine-learning](http://cs229.stanford.edu/syllabus.html) ([lectures](https://see.stanford.edu/Course/CS229/47))<a id="sec-1-2-5"></a>
+4.  security ([tools](https://github.com/maestron/botnets))
 
-1.  [machine-learning-mastery](https://machinelearningmastery.com/start-here/) ([tutorials](https://machinelearningmastery.com/blog/))
+### artificial-intelligence machine-learning<a id="sec-1-2-5"></a>
 
-2.  [fast-ai](http://course.fast.ai)
+1.  [artificial-intelligence](http://ai.berkeley.edu/course_schedule.html) [machine-learning](http://cs229.stanford.edu/syllabus.html) ([lectures](https://see.stanford.edu/Course/CS229/47))
 
-3.  [kaggle](https://www.kaggle.com/learn/overview) ([dataset](https://www.kaggle.com/datasets))
+2.  [machine-learning-mastery](https://machinelearningmastery.com/start-here/) ([tutorials](https://machinelearningmastery.com/blog/))
 
-4.  [dataset](https://news.ycombinator.com/item?id=17919297)
+3.  [fast-ai](http://course.fast.ai)
 
-5.  [pytorch](https://github.com/bharathgs/Awesome-pytorch-list/blob/master/README.md)
+4.  [kaggle](https://www.kaggle.com/learn/overview) ([dataset](https://www.kaggle.com/datasets))
 
-6.  specialization
+5.  [dataset](https://news.ycombinator.com/item?id=17919297)
+
+6.  [pytorch](https://github.com/bharathgs/Awesome-pytorch-list/blob/master/README.md)
+
+7.  specialization
 
     1.  [machine-learning](https://github.com/Avik-Jain/100-Days-Of-ML-Code/blob/master/README.md) ([from-scratch](https://github.com/eriklindernoren/ML-From-Scratch))
 
@@ -214,7 +220,9 @@
 
     2.  chaos making-a-new-science
 
-### [helpful-tools](https://github.com/ripienaar/free-for-dev/blob/master/README.md) ([alt](https://github.com/cjbarber/ToolsOfTheTrade/blob/master/readme.md))<a id="sec-1-2-7"></a>
+### helpful-tools<a id="sec-1-2-7"></a>
+
+1.  [helpful-tools](https://github.com/ripienaar/free-for-dev/blob/master/README.md) ([alt](https://github.com/cjbarber/ToolsOfTheTrade/blob/master/readme.md))
 
 ### uncategorized<a id="sec-1-2-8"></a>
 

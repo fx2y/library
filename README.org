@@ -47,7 +47,8 @@
 **** [[https://pdos.csail.mit.edu/6.824/schedule.html][distributed-systems]] ([[http://dsrg.pdos.csail.mit.edu/papers/][papers]])
 **** [[https://github.com/binhnguyennus/awesome-scalability/blob/master/README.md][(scalable available stable performant intelligent) system-design-patterns]] ([[https://martinfowler.com/][blog]])
 ***** [[https://github.com/Randommood/Strangeloop2015/blob/master/README.md][resilient-distributed-systems]]
-*** full-stack-software-development ([[https://github.com/gothinkster/realworld/blob/master/README.md][quickstart]])
+*** full-stack-software-development
+**** [[https://github.com/gothinkster/realworld/blob/master/README.md][quickstart]]
 **** [[https://developer.mozilla.org/en-US/docs/Web][front-end-software-development]] ([[https://github.com/thedaviddias/Front-End-Checklist/blob/master/README.md][checklist]])
 ***** [[https://reactjs.org/docs/getting-started.html][react]] ([[https://reactjs.org/tutorial/tutorial.html][tutorial]] [[https://krasimir.gitbooks.io/react-in-patterns/content/][pattern]] [[https://vasanthk.gitbooks.io/react-bits/][pattern]] [[https://github.com/planningcenter/react-patterns/blob/master/README.md][pattern]] [[https://github.com/chantastic/reactpatterns/blob/master/README.markdown][pattern]] [[https://github.com/kentcdodds/advanced-react-patterns][pattern]] [[https://github.com/enaqx/awesome-react/blob/master/README.md][curated]] [[https://github.com/brillout/awesome-react-components/blob/master/readme.md][curated-component]])
 ***** (ui ux) design ([[https://ant.design/docs/react/introduce][ant-design]] ([[https://mobile.ant.design/docs/react/introduce][mobile]] [[https://pro.ant.design/docs/getting-started][pro]]) [[https://getmdl.io/index.html][material-design-lite]])
@@ -78,11 +79,13 @@
 ***** [[https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/README.md][kubernetes]] ([[https://github.com/ramitsurana/awesome-kubernetes][curated]] [[https://www.magicsandbox.com/][interactive-tutorial]])
 **** helpful-tools
 ***** [[http://deployd.com/][build-an-api]]
-*** [[https://teachyourselfcs.com/][computer-science]]
+*** computer-science
+**** [[https://teachyourselfcs.com/][teach-yourself-computer-science]]
 **** [[https://paperswelove.org/][papers]] ([[https://github.com/zziz/pwc/blob/master/README.md][with-code]])
 **** [[https://intensecrypto.org/public/][cryptography]] ([[https://github.com/google/tink][library]])
 **** security ([[https://github.com/maestron/botnets][tools]])
-*** [[http://ai.berkeley.edu/course_schedule.html][artificial-intelligence]] [[http://cs229.stanford.edu/syllabus.html][machine-learning]] ([[https://see.stanford.edu/Course/CS229/47][lectures]])
+*** artificial-intelligence machine-learning
+**** [[http://ai.berkeley.edu/course_schedule.html][artificial-intelligence]] [[http://cs229.stanford.edu/syllabus.html][machine-learning]] ([[https://see.stanford.edu/Course/CS229/47][lectures]])
 **** [[https://machinelearningmastery.com/start-here/][machine-learning-mastery]] ([[https://machinelearningmastery.com/blog/][tutorials]])
 **** [[http://course.fast.ai][fast-ai]]
 **** [[https://www.kaggle.com/learn/overview][kaggle]] ([[https://www.kaggle.com/datasets][dataset]])
@@ -101,7 +104,8 @@
 **** [[https://www.robertsapolskyrocks.com/hum-bio.html][human-behavioral-biology]]
 ***** behave the-biology-of-humans-at-our-best-and-worst
 ***** chaos making-a-new-science
-*** [[https://github.com/ripienaar/free-for-dev/blob/master/README.md][helpful-tools]] ([[https://github.com/cjbarber/ToolsOfTheTrade/blob/master/readme.md][alt]])
+*** helpful-tools
+**** [[https://github.com/ripienaar/free-for-dev/blob/master/README.md][helpful-tools]] ([[https://github.com/cjbarber/ToolsOfTheTrade/blob/master/readme.md][alt]])
 *** uncategorized
 **** [[https://github.com/vitalets/github-trending-repos][curated-github-trending]]
 **** interesting-projects
