@@ -1,0 +1,310 @@
+* language or framework design patterns
+* general architecture
+** 10 common architectural patterns
+*** layered pattern
+*** client-server pattern
+*** master-slave pattern
+*** pipe-filter pattern
+*** broker pattern
+*** peer-to-peer pattern
+*** event-bus pattern
+*** model-view-controller pattern
+*** blackboard pattern
+*** interpreter pattern
+** reactive design patterns
+*** fault tolerance and recovery patterns
+**** simple component
+**** error kernel
+**** let-it-crash
+**** circuit breaker
+*** replication patterns
+**** active-passive
+**** multiple-master
+***** consensus-based
+***** conflict detection and resolution
+***** conflict-free replicated data types
+**** active-active
+*** resource management patterns
+**** resource encapsulation
+**** resource loan
+**** complex command
+**** resource pool
+**** managed blocking
+*** message flow patterns
+**** request-response
+**** self-contained message
+**** ask pattern
+**** forward flow
+**** aggregator
+**** saga
+**** business handshake
+*** flow control patterns
+**** pull
+**** managed queue
+**** drop
+**** throttling
+*** state management and persistence patterns
+**** domain object
+**** sharding
+**** event sourcing
+**** event stream
+** scalable system design patterns
+*** load balancer
+*** scatter and gather
+*** result cache
+*** shared space
+*** pipe and filter
+*** map reduce
+*** bulk synchronous parallel
+*** execution orchestrator
+** patterns of enterprise application architecture
+*** domain logic patterns
+**** transaction script
+**** domain model
+**** table module
+**** service layer
+*** data source architectural patterns
+**** table data gateway
+**** row data gateway
+**** active record
+**** data mapper
+*** object-relational behavioral patterns
+**** unit of work
+**** identity map
+**** lazy load
+*** object-relational structural patterns
+**** identity field
+**** foreign key mapping
+**** association table mapping
+**** dependent mapping
+**** embedded value
+**** serialized lob
+**** single table inheritance
+**** class table inheritance
+**** concrete table inheritance
+**** inheritance mappers
+*** object-relational metadata mapping patterns
+**** metadata mapping
+**** query object
+**** repository
+*** web presentation patterns
+**** model view controller
+**** page controller
+**** front controller
+**** template view
+**** transform view
+**** two-step view
+**** application controller
+*** distribution patterns
+**** remote facade
+**** data transfer object
+*** offline concurrency patterns
+**** optimistic offline lock
+**** pessimistic offline lock
+**** coarse grained lock
+**** implicit lock
+*** session state patterns
+**** client session state
+**** server session state
+**** database session state
+*** base patterns
+**** gateway
+**** mapper
+**** layer supertype
+**** separated interface
+**** registry
+**** value object
+**** money
+**** special case
+**** plugin
+**** service stub
+**** record set
+** system design primer
+*** review the scalability video lecture and article
+*** performance vs scalability
+*** latency vs throughput
+*** availability vs consistency
+**** cap theorem
+***** cp - consistency and partition tolerance
+***** ap - availability and partition tolerance
+*** consistency patterns
+**** weak consistency
+**** eventual consistency
+**** strong consistency
+*** availability patterns
+**** fail-over
+**** replication
+*** domain name system
+*** content delivery network
+**** push cdns
+**** pull cdns
+*** load balancer
+**** active-passive
+**** active-active
+**** layer 4 load balancing
+**** layer 7 load balancing
+**** horizontal scaling
+*** reverse proxy (web server)
+**** load balancer vs reverse proxy
+*** application layer
+**** microservices
+**** service discovery
+*** database
+**** relational database management system (rdbms)
+***** master-slave replication
+***** master-master replication
+***** federation
+***** sharding
+***** denormalization
+***** sql tuning
+**** nosql
+***** key-value store
+***** document store
+***** wide column store
+***** graph database
+**** sql or nosql
+*** cache
+**** client caching
+**** cdn caching
+**** web server caching
+**** database caching
+**** application caching
+**** caching at the database query level
+**** caching at the object level
+**** when to update the cache
+***** cache-aside
+***** write-through
+***** write-behind (write-back)
+***** refresh-ahead
+*** asynchronism
+**** message queues
+**** task queues
+**** back pressure
+*** communication
+**** transmission control protocol (tcp)
+**** user datagram protocol (udp)
+**** remote procedure call (rpc)
+**** representational state transfer (rest)
+*** security
+*** appendix
+**** powers of two table
+**** latency numbers every programmer should know
+**** additional system design interview questions
+**** real world architectures
+**** company architectures
+**** company engineering blogs
+*** system design interview
+*** object-oriented design interview
+** architecting for reliability
+*** concepts
+**** reliability
+**** availability
+**** resilient network design - key guidelines
+**** application design for high availability
+***** understanding availability needs
+***** application design for availability
+**** operational considerations for availability
+***** automate deployments
+***** testing
+***** monitoring and alerting
+***** generation
+***** aggregation
+***** real-time processing and alarming
+***** storage and analytics
+***** operational readiness reviews (orrs)
+***** auditing
+*** resiliency and availability design patterns for the cloud
+**** availability patterns
+**** health endpoint monitoring
+**** queue-based load leveling
+**** throttling
+**** resiliency patterns
+**** bulk head
+**** circuit breaker
+**** compensating transaction
+**** leader election
+**** retry
+**** scheduler agent supervisor
+**** aws specific patterns
+**** multi-server pattern
+**** multi-datacenter pattern
+**** floating ip pattern
+*** high availability architectures
+**** availability goal scenarios
+**** 99% scenario
+**** 99.9% scenario
+**** 99.99% scenario
+**** multi-region deployments
+**** 99.95% scenario using multi-region deployment
+**** 99.999% or higher scenario
+* cloud architecture
+** aws cloud design patterns
+** azure cloud design patterns
+** cloud patterns
+** cloud computing patterns
+** google cloud solutions
+* serverless architecture
+** serverless architecture five design patterns
+** solving problems in serverless
+* micro services and distributed systems
+** microservice patterns
+** microservices
+** microservices anti patterns
+** 12 factor
+** microservices sync vs async
+** message queues
+** enterprise integration patterns
+* internet of things
+** iot communication patterns
+** design patterns for iot
+* big data
+** big data patterns
+** map reduce patterns
+** streaming realtime analytics
+* databases
+** sql
+*** database tenancy patterns
+*** database answers
+*** database programmer
+*** red gate
+*** sqlcheck
+** nosql
+*** nosql resilience patterns
+*** nosql patterns
+*** mongodb
+* docker and devops
+** containers patterns
+** container anti patterns
+** kubernetes
+** container design patterns
+** pattern and anti pattern cicd
+** best practices for shell scripts
+* mobile
+** ios
+*** ios architecture patterns
+** android
+*** android patterns
+*** design patterns for android
+*** mvc mvp and mvvm
+* front end development
+** user interface
+** oocss acss bem smacss
+** css pro tips
+** responsive design patterns
+** front end architecture
+*** mv*
+*** gui architectures
+* security
+** open security architecture
+** web security basics
+** cloud security
+** owasp
+** azure security
+* books
+** django design patterns and best practices
+** mongodb applied design patterns
+** design patterns elements reusable object oriented
+** head first design patterns brain friendly
+** effective java
+** node js design patterns
+** game programming patterns
