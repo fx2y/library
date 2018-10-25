@@ -1,6 +1,6 @@
+#+OPTIONS: tags:nil
 
 * Concurrent computing :concurrency:basic_language_learning:
-
 
 Task
 
@@ -8,17 +8,11 @@ Using either native language concurrency syntax or freely available libraries, w
 
 Concurrency syntax must use threads, tasks, co-routines, or whatever concurrency is called in your language.
 
-
-
-
 Channel[edit]
-
 
 Simple and direct solution: Start three goroutines, give each one a word. Each sleeps, then returns the word on a channel. The main goroutine prints words as they return. The print loop represents a checkpoint -- main doesn't exit until all words have been returned and printed.
 
-
 This solution also shows a good practice for generating random numbers in concurrent goroutines. While certainly not needed for this RC task, in the more general case where you have a number of goroutines concurrently needing random numbers, the goroutines can suffer congestion if they compete heavily for the sole default library source. This can be relieved by having each goroutine create its own non-sharable source. Also particularly in cases where there might be a large number of concurrent goroutines, the source provided in subrepository rand package (exp/rand) can be a better choice than the standard library generator. The subrepo generator requires much less memory for "state" and is much faster to seed.
-
 
 #+BEGIN_SRC go
 package main
@@ -46,12 +40,9 @@ func main() {
 }
 #+END_SRC
 
-
 Afterfunc[edit]
 
-
 time.Afterfunc combines the sleep and the goroutine start. log.Println serializes output in the case goroutines attempt to print concurrently. sync.WaitGroup is used directly as a checkpoint.
-
 
 #+BEGIN_SRC go
 package main
@@ -81,12 +72,9 @@ func main() {
 }
 #+END_SRC
 
-
 Select[edit]
 
-
 This solution might stretch the intent of the task a bit. It is concurrent but not parallel. Also it doesn't sleep and doesn't call the random number generator explicity. It works because the select statement is specified to make a "pseudo-random fair choice" among multiple channel operations.
-
 
 #+BEGIN_SRC go
 package main
@@ -116,9 +104,7 @@ func main() {
 }
 #+END_SRC
 
-
 Output:
-
 
 #+BEGIN_SRC go
 Code
@@ -135,16 +121,13 @@ Code
 
 #+END_SRC
 
-
 * Synchronous concurrency :concurrency:clarify_task:
-
 
 The goal of this task is to create two concurrent activities ("Threads" or "Tasks", not processes.) that share data synchronously. Your language may provide syntax or libraries to perform concurrency. Different languages provide different implementations of concurrency, often with different names. Some languages use the term threads, others use the term tasks, while others use co-processes. This task should not be implemented using fork, spawn, or the Linux/UNIX/Win32 pipe command, as communication should be between threads, not processes.
 
 One of the concurrent units will read from a file named "input.txt" and send the contents of that file, one line at a time, to the other concurrent unit, which will print the line it receives to standard output. The printing unit must count the number of lines it prints. After the concurrent unit reading the file sends its last line to the printing unit, the reading unit will request the number of lines printed by the printing unit. The reading unit will then print the number of lines printed by the printing unit.
 
 This task requires two-way communication between the concurrent units. All concurrent units must cleanly terminate at the end of the program.
-
 
 #+BEGIN_SRC go
 package main
@@ -181,9 +164,7 @@ func main() {
 }
 #+END_SRC
 
-
 * Dining philosophers :classic_cs_problems_and_programs:concurrency:puzzles:
-
 
 The dining philosophers problem illustrates non-composability of low-level synchronization primitives like semaphores. It is a modification of a problem posed by Edsger Dijkstra.
 
@@ -193,12 +174,9 @@ It can be observed that a straightforward solution, when forks are implemented b
 
 There are many solutions of the problem, program at least one, and explain how the deadlock is prevented.
 
-
 Channels[edit]
 
-
 Goroutine synchronization done with Go channels. Deadlock prevented by making one philosopher "left handed."
-
 
 #+BEGIN_SRC go
 package main
@@ -287,9 +265,7 @@ func main() {
 }
 #+END_SRC
 
-
 Output:
-
 
 #+BEGIN_SRC go
 table empty
@@ -357,15 +333,11 @@ table empty
 
 #+END_SRC
 
-
 Mutexes and WaitGroup[edit]
-
 
 The first solution just uses channels for synchronization. Channels can solve lots of problems but the sync library has a few other functions to more directly model common operations. In Dining Philosophers, fork use is mutually exclusive so it's very clear to model forks with sync.Mutex objects. Also waiting for a number of concurrent tasks to finish is a common pattern directly implemented with sync.WaitGroup.
 
-
 One more concurrency technique actually used in both solutions is to use the log package for output rather than the fmt package. Output from concurrent goroutines can get accidentally interleaved in some cases. While neither package makes claims about this problem, the log package historically has been coded to avoid interleaved output.
-
 
 #+BEGIN_SRC go
 package main
@@ -429,18 +401,13 @@ func main() {
 }
 #+END_SRC
 
-
 * Handle a signal :concurrency:signal_handling:
-
 
 Most operating systems provide interrupt facilities, sometimes called signals either generated by the user or as a result of program failure or reaching a limit like file space. Unhandled signals generally terminate a program in a disorderly manner. Signal handlers are created so that the program behaves in a well-defined manner upon receipt of a signal.
 
 Task
 
 Provide a program that displays an integer on each line of output at the rate of about one per half second. Upon receipt of the SIGINT signal (often generated by the user typing ctrl-C ( or better yet, SIGQUIT ctrl-\ )) the program will cease outputting integers, output the number of seconds the program has run, and then the program will quit.
-
-
-
 
 #+BEGIN_SRC go
 package main
@@ -473,9 +440,7 @@ func main() {
 }
 #+END_SRC
 
-
 Output:
-
 
 #+BEGIN_SRC go
 1
@@ -486,12 +451,7 @@ Ran for 1.804877 seconds.
 
 #+END_SRC
 
-
 * Atomic updates :concurrency:
-
-
-
-
 
 Task
 
@@ -500,23 +460,15 @@ Define a data type consisting of a fixed number of 'buckets', each containing a 
 get the current value of any bucket
 remove a specified amount from one specified bucket and add it to another, preserving the total of all bucket values, and clamping the transferred amount to ensure the values remain non-negative
 
-
-
 In order to exercise this data type, create one set of buckets, and start three concurrent tasks:
 
 As often as possible, pick two buckets and make their values closer to equal.
 As often as possible, pick two buckets and arbitrarily redistribute their values.
 At whatever rate is convenient, display (by any means) the total value and, optionally, the individual values of each bucket.
 
-
 The display task need not be explicit; use of e.g. a debugger or trace tool is acceptable provided it is simple to set up to provide the display.
 
-
-
 This task is intended as an exercise in atomic operations.   The sum of the bucket values must be preserved even if the two tasks attempt to perform transfers simultaneously, and a straightforward solution is to ensure that at any time, only one transfer is actually occurring — that the transfer operation is atomic.
-
-
-
 
 #+BEGIN_SRC go
 package main
@@ -671,9 +623,7 @@ func buddha() {
 }
 #+END_SRC
 
-
 Output:
-
 
 #+BEGIN_SRC go
 sum  ---updates---    mean  buckets
@@ -686,18 +636,13 @@ sum  ---updates---    mean  buckets
 
 #+END_SRC
 
-
 * Determine if only one instance is running :concurrency:programming_environment_operations:
-
 
 This task is to determine if there is only one instance of an application running. If the program discovers that an instance of it is already running, then it should display a message indicating that it is already running and exit.
 
-
 Port[edit]
 
-
 Recommended over file based solutions. It has the advantage that the port is always released when the process ends.
-
 
 #+BEGIN_SRC go
 package main
@@ -721,12 +666,9 @@ func main() {
 }
 #+END_SRC
 
-
 File[edit]
 
-
 Solution using O_CREATE|O_EXCL. This solution has the problem that if anything terminates the program early, the lock file remains.
-
 
 #+BEGIN_SRC go
 package main
@@ -755,9 +697,7 @@ func main() {
 }
 #+END_SRC
 
-
 Here's a fluffier version that stores the PID in the lock file to provide better messages. It has the same problem of the lock file remaining if anything terminates the program early.
-
 
 #+BEGIN_SRC go
 package main
@@ -811,9 +751,7 @@ func main() {
 }
 #+END_SRC
 
-
 * Events :concurrency:encyclopedia:
-
 
 Event is a synchronization object. An event has two states signaled and reset. A task may await for the event to enter the desired state, usually the signaled state. It is released once the state is entered. Releasing waiting tasks is called event notification. Programmatically controlled events can be set by a task into one of its states.
 
@@ -830,9 +768,7 @@ Event-driven architectures are widely used in GUI design and SCADA systems. They
 
 Variants of events[edit]
 
-
 A Go channel can represent an manual-reset event, as described by the task. The two states of signaled and reset correspond to the presence or absence of a value on the channel. The program signals by sending a value on the channel. The event is reset when the waiting task explicitly executes the channel receive operation, <-event.
-
 
 #+BEGIN_SRC go
 package main
@@ -860,9 +796,7 @@ func main() {
 }
 #+END_SRC
 
-
 Output:
-
 
 #+BEGIN_SRC go
 01:27:21.862000 program start
@@ -873,9 +807,7 @@ Output:
 
 #+END_SRC
 
-
 * Checkpoint synchronization :concurrency:classic_cs_problems_and_programs:
-
 
 The checkpoint synchronization is a problem of synchronizing multiple tasks. Consider a workshop where several workers (tasks) assembly details of some mechanism. When each of them completes his work they put the details together. There is no store, so a worker who finished its part first must wait for others before starting another one. Putting details together is the checkpoint at which tasks synchronize themselves before going their paths apart.
 
@@ -889,15 +821,11 @@ When a worker is ready it shall not continue before others finish. A typical imp
 
 If you can, implement workers joining and leaving.
 
-
 Solution 1, WaitGroup
-
 
 The type sync.WaitGroup in the standard library implements a sort of checkpoint synchronization. It allows one goroutine to wait for a number of other goroutines to indicate something, such as completing some work.
 
-
 This first solution is a simple interpretation of the task, starting a goroutine (worker) for each part, letting the workers run concurrently, and waiting for them to all indicate completion. This is efficient and idiomatic in Go.
-
 
 #+BEGIN_SRC go
 package main
@@ -936,12 +864,9 @@ func main() {
 }
 #+END_SRC
 
-
 Output:
 
-
 Sample run, with race detector option to show no race conditions detected.
-
 
 #+BEGIN_SRC go
 $ go run -race r1.go
@@ -979,12 +904,9 @@ $
 
 #+END_SRC
 
-
 Solution 2, channels
 
-
 Channels also synchronize, and in addition can send data. The solution shown here is very similar to the WaitGroup solution above but sends data on a channel to simulate a completed part. The channel operations provide synchronization and a WaitGroup is not needed.
-
 
 #+BEGIN_SRC go
 package main
@@ -1029,9 +951,7 @@ func main() {
 }
 #+END_SRC
 
-
 Output:
-
 
 #+BEGIN_SRC go
 $ go run -race r2.go
@@ -1069,12 +989,9 @@ $
 
 #+END_SRC
 
-
 Solution 3, two-phase barrier
 
-
 For those that might object to the way the two solutions above start new goroutines in each cycle, here is a technique sometimes called a two-phase barrier, where goroutines loop until being shutdown. In each loop there are two phases, one of making the part, and one of waiting for the completed parts to be assembled. This more literally satisfies the task but in fact is not idiomatic Go. Goroutines are cheap to start up and shut down in Go and the extra complexity of this two-phase barrier technique is not justified.
-
 
 #+BEGIN_SRC go
 package main
@@ -1143,9 +1060,7 @@ func main() {
 }
 #+END_SRC
 
-
 Output:
-
 
 #+BEGIN_SRC go
 $ go run -race r3.go
@@ -1190,12 +1105,9 @@ $ go run -race r3.go
 
 #+END_SRC
 
-
 Solution 4, workers joining and leaving
 
-
 This solution shows workers joining and leaving, although it is a rather different interpretation of the task.
-
 
 #+BEGIN_SRC go
 package main
@@ -1268,9 +1180,7 @@ func worker(a chan int, c *sync.WaitGroup, contract, id int) {
 }
 #+END_SRC
 
-
 Output:
-
 
 #+BEGIN_SRC go
 worker 1 contracted to assemble 2 details
@@ -1311,9 +1221,7 @@ worker 6 leaves shop
 mechanism 5 completed
 #+END_SRC
 
-
 * Active object :concurrency:object_oriented:
-
 
 In object-oriented programming an object is active when its state depends on clock. Usually an active object encapsulates a task that updates the object's state. To the outer world the object looks like a normal object with methods that can be called from outside. Implementation of such methods must have a certain synchronization mechanism with the encapsulated task in order to prevent object's state corruption.
 
@@ -1332,9 +1240,7 @@ wait 0.5s
 
 Verify that now the object's output is approximately 0 (the sine has the period of 2s). The accuracy of the result will depend on the OS scheduler time slicing and the accuracy of the clock.
 
-
 Using time.Tick to sample K at a constant frequency. Three goroutines are involved, main, aif, and tk. Aif controls access to the accumulator s and the integration function K. Tk and main must talk to aif through channels to access s and K.
-
 
 #+BEGIN_SRC go
 package main
@@ -1419,36 +1325,26 @@ func main() {
 }
 #+END_SRC
 
-
 Output:
-
 
 #+BEGIN_SRC go
 2.4517135756807704e-05
 
 #+END_SRC
 
-
 * Metered concurrency :concurrency:
-
 
 The goal of this task is to create a counting semaphore used to control the execution of a set of concurrent units. This task intends to demonstrate coordination of active concurrent units through the use of a passive concurrent unit. The operations for a counting semaphore are acquire, release, and count. Each active concurrent unit should attempt to acquire the counting semaphore before executing its assigned duties. In this case the active concurrent unit should report that it has acquired the semaphore. It should sleep for 2 seconds and then release the semaphore.
 
-
 Buffered channel[edit]
-
 
 Recommended solution for simplicity. Acquire operation is channel send, release is channel receive, and count is provided with cap and len.
 
-
 To demonstrate, this example implements the Library analogy from Wikipedia with 10 study rooms and 20 students.
-
 
 The channel type shown here is struct{}. struct{} is nice because it has zero size and zero content, although the syntax is slightly akward. Other popular choices for no-content tokens are ints and bools. They read a little nicer but waste a few bytes and could potentially mislead someone to think the values had some meaning.
 
-
 A couple of other concurrency related details used in the example are the log package for serializing output and sync.WaitGroup used as a completion checkpoint. Functions of the fmt package are not synchronized and can produce interleaved output with concurrent writers. The log package does nice synchronization to avoid this.
-
 
 #+BEGIN_SRC go
 package main
@@ -1498,15 +1394,11 @@ func student(rooms sem, studied *sync.WaitGroup) {
 }
 #+END_SRC
 
-
 Output for this and the other Go programs here shows 10 students studying immediately, about a 2 second pause, 10 more students studying, then another pause of about 2 seconds before returning to the command prompt. In this example the count values may look jumbled. This is a result of the student goroutines running concurrently.
-
 
 Sync.Cond[edit]
 
-
 A more traditional approach implementing a counting semaphore object with sync.Cond. It has a constructor and methods for the three operations requested by the task.
-
 
 #+BEGIN_SRC go
 package main
@@ -1553,7 +1445,7 @@ func (cs *countSem) release() {
 }
  
 func main() {
-    librarian := newCount(10) 
+    librarian := newCount(10)
     nStudents := 20
     var studied sync.WaitGroup
     studied.Add(nStudents)
@@ -1572,12 +1464,9 @@ func student(studyRoom *countSem, studied *sync.WaitGroup) {
 }
 #+END_SRC
 
-
 * Rendezvous :encyclopedia:concurrency:
 
-
 Demonstrate the “rendezvous” communications technique by implementing a printer monitor.
-
 
 #+BEGIN_SRC go
 package main
@@ -1690,7 +1579,7 @@ func monitor(hardPrint printer, entry, reserve *rSync) {
             // Requeue to "entry point" of reserve printer monitor.
             // Caller stays blocked, and now this goroutine blocks until
             // it gets a response from the reserve printer monitor.
-            // It then transparently relays the response to the caller. 
+            // It then transparently relays the response to the caller.
             entry.response <- reserve.print(data)
  
         default:
@@ -1727,9 +1616,7 @@ func writer(printMonitor *rSync, id, text string, busy *sync.WaitGroup) {
 }
 #+END_SRC
 
-
 Output:
-
 
 #+BEGIN_SRC go
 Humpty Dumpty sat on a wall.
