@@ -420,7 +420,8 @@
 - [Banker's algorithm](#sec-420)
 - [Hello world/Line printer](#sec-421)
 
-# Fibonacci sequence     :arithmetic:memoization:recursion:classic_cs_problems_and_programs:arithmetic_operations:<a id="sec-1"></a>
+
+# Fibonacci sequence<a id="sec-1"></a>
 
 The Fibonacci sequence is a sequence   Fn   of natural numbers defined recursively:
 
@@ -545,7 +546,7 @@ fn main() {
 }
 ```
 
-# Conditional structures     :simple:branches:control_structures:<a id="sec-2"></a>
+# Conditional structures<a id="sec-2"></a>
 
 Task
 
@@ -689,7 +690,7 @@ fn main() {
 }
 ```
 
-# Factorial     :arithmetic_operations:memoization:simple:recursion:arithmetic:classic_cs_problems_and_programs:<a id="sec-3"></a>
+# Factorial<a id="sec-3"></a>
 
 Definitions   The factorial of   0   (zero)   is defined as being   1   (unity).   The   Factorial Function   of a positive integer,   n,   is defined as the product of the sequence:
 
@@ -809,7 +810,7 @@ fn main() {
 }
 ```
 
-# Sieve of Eratosthenes     :prime_numbers:clarified_and_needing_review:<a id="sec-5"></a>
+# Sieve of Eratosthenes<a id="sec-5"></a>
 
 The Sieve of Eratosthenes is a simple algorithm that finds the prime numbers up to a given integer.
 
@@ -1160,7 +1161,7 @@ Before being extended to truly huge ranges such a 1e14, the code should have max
 
 The above code demonstrates some techniques to work within the limitations of Rust's ownership/borrowing/lifetime memory model as it: 1) uses a recursive secondary base primes Iterator made persistent by using a Vec that uses its own value as a source of its own page stream, 2) this is done by using a recursive variable that accessed as a Rc reference counted heap value with internal mutability by a pair of RefCell's, 3) note that the above secondary stream is not thread safe and needs to have the Rc changed to an Arc, the RefCell's changed to Mutex'es or (probably preferably RwLock's that enclose/lock all reading and writing operations in the secondary stream "Bpsi"'s next() method, and 4) the use of Iterators where their performance doesn't matter (at the page level) while using tight loops at more inner levels.
 
-# Arrays     :simple:basic_language_learning:<a id="sec-6"></a>
+# Arrays<a id="sec-6"></a>
 
 This task is about arrays.
 
@@ -1225,7 +1226,7 @@ v.push(4);
 v.len(); // 4
 ```
 
-# Hello world/Text     :wikipediasourced:simple:bacon:selection_short_circuit_console_program_basics:basic_language_learning:<a id="sec-7"></a>
+# Hello world/Text<a id="sec-7"></a>
 
 Task
 
@@ -1253,7 +1254,7 @@ fn main () {
  
 ```
 
-# FizzBuzz     :classic_cs_problems_and_programs:simple:iteration:recursion:<a id="sec-8"></a>
+# FizzBuzz<a id="sec-8"></a>
 
 Task
 
@@ -1343,7 +1344,7 @@ fn start(_argc: isize, _argv: *const *const u8) -> isize {
 #[lang = "panic_fmt"] extern fn panic_fmt() {}
 ```
 
-# String length     :string_manipulation:basic_language_learning:<a id="sec-9"></a>
+# String length<a id="sec-9"></a>
 
 Task
 
@@ -1395,7 +1396,7 @@ fn main() {
  
 ```
 
-# Comments     :basic_language_learning:initialization:<a id="sec-10"></a>
+# Comments<a id="sec-10"></a>
 
 Task
 
@@ -1451,7 +1452,7 @@ fn example() {
 }
 ```
 
-# Function definition     :simple:functions_and_subroutines:basic_language_learning:<a id="sec-11"></a>
+# Function definition<a id="sec-11"></a>
 
 A function is a body of code that returns a value.
 
@@ -1473,7 +1474,7 @@ fn multiply(a: i32, b: i32) -> i32 {
 }
 ```
 
-# Ackermann function     :classic_cs_problems_and_programs:memoization:arbitrary_precision:<a id="sec-12"></a>
+# Ackermann function<a id="sec-12"></a>
 
 The Ackermann function is a classic example of a recursive function, notable especially because it is not a primitive recursive function. It grows very quickly in value, as does the size of its call tree.
 
@@ -1539,7 +1540,7 @@ fn main() {
 }
 ```
 
-# Collections     :basic_language_learning:clarified_and_needing_review:data_structures:<a id="sec-14"></a>
+# Collections<a id="sec-14"></a>
 
 Collections are abstractions to represent sets of values.
 
@@ -1650,7 +1651,7 @@ A priority queue implemented with a binary heap. You should use it when
 
 You want to store a bunch of elements, but only ever want to process the "biggest" or "most important" one at any given time. You want a priority queue.
 
-# Reverse a string     :string_manipulation:<a id="sec-15"></a>
+# Reverse a string<a id="sec-15"></a>
 
 Task
 
@@ -1693,7 +1694,7 @@ Output:
 
 f̅ds⃝a
 
-# Greatest common divisor     :arithmetic_operations:recursion:<a id="sec-16"></a>
+# Greatest common divisor<a id="sec-16"></a>
 
 Task
 
@@ -1833,7 +1834,7 @@ For 27 number of elements is 112
 Longest sequence is 351 element long for seed 77031
 ```
 
-# A+B     :simple:<a id="sec-18"></a>
+# A+B<a id="sec-18"></a>
 
 A+B   ─── a classic problem in programming contests,   it's given so contestants can gain familiarity with the online judging system being used.
 
@@ -2709,7 +2710,7 @@ The above code uses the library vector sort capabilities; custom sorting version
 
 Note that I'm not knocking Haskell, just that (as here) many Haskell programmers like to use lazy list processing which has its costs; the Haskell version could be re-written to use arrays and functional loops and likely be about the same speed although perhaps not as concise. By simply converting the Haskell program to force strictness and to use this same method of determining the width of the upper band, the Haskell program would have the same time and space complexity as here, but would still be a constant factor of almost eight times slower due to the list processing (with a constant factor for extra space as well). Use of a mutable array or vector would solve that, but unfortunately not as easily as here as there would be the question of "unboxed" versus "boxed" arrays/vectors, and the complexities of implementing the (faster) unboxed type in which to sort the band - in short, not as easy as here in Rust.
 
-# Empty program     :initialization:basic_language_learning:simple:<a id="sec-20"></a>
+# Empty program<a id="sec-20"></a>
 
 Task
 
@@ -2719,7 +2720,7 @@ Create the simplest possible program that is still considered "correct."
 fn main(){}
 ```
 
-# Greatest element of a list     :simple:arithmetic_operations:<a id="sec-21"></a>
+# Greatest element of a list<a id="sec-21"></a>
 
 Task
 
@@ -2742,7 +2743,7 @@ Some(39)
 39
 ```
 
-# Palindrome detection     :text_processing:classic_cs_problems_and_programs:recursion:palindromes:string_manipulation:<a id="sec-22"></a>
+# Palindrome detection<a id="sec-22"></a>
 
 A palindrome is a phrase which reads the same backward and forward.
 
@@ -2814,7 +2815,7 @@ fn is_palindrome(string: &str) -> bool {
 }
 ```
 
-# Call a function     :functions_and_subroutines:simple:<a id="sec-23"></a>
+# Call a function<a id="sec-23"></a>
 
 Task
 
@@ -3067,7 +3068,7 @@ A quine in the shape of a circle:
  
 ```
 
-# Generic swap     :basic_language_learning:<a id="sec-25"></a>
+# Generic swap<a id="sec-25"></a>
 
 Task
 
@@ -3096,7 +3097,7 @@ fn main() {
 }
 ```
 
-# Loop over multiple arrays simultaneously     :iteration:<a id="sec-26"></a>
+# Loop over multiple arrays simultaneously<a id="sec-26"></a>
 
 Task
 
@@ -3148,7 +3149,7 @@ bB2
 cC3
 ```
 
-# Repeat a string     :string_manipulation:<a id="sec-27"></a>
+# Repeat a string<a id="sec-27"></a>
 
 Take a string and repeat it some number of times.
 
@@ -3194,7 +3195,7 @@ See also
 
   <http://99-bottles-of-beer.net/>   Category:99<sub>Bottles</sub><sub>of</sub><sub>Beer</sub>   Category:Programming language families   Wikipedia 99 bottles of beer
 
-# Associative array/Creation     :data_structures:basic_language_learning:<a id="sec-29"></a>
+# Associative array/Creation<a id="sec-29"></a>
 
 Task
 
@@ -3220,7 +3221,7 @@ fn main() {
 }
 ```
 
-# Averages/Arithmetic mean     :probability_and_statistics:<a id="sec-30"></a>
+# Averages/Arithmetic mean<a id="sec-30"></a>
 
 Task[edit]
 
@@ -3277,7 +3278,7 @@ mean of [2, 3, 5, 7, 13, 21, 33, 54]: 17.25
 mean of []: NaN
 ```
 
-# Apply a callback to an array     :basic_language_learning:iteration:<a id="sec-31"></a>
+# Apply a callback to an array<a id="sec-31"></a>
 
 Task
 
@@ -3295,7 +3296,7 @@ fn main() {
 }
 ```
 
-# Loops/Foreach     :iteration:<a id="sec-32"></a>
+# Loops/Foreach<a id="sec-32"></a>
 
 Loop through and print each element in a collection in order.
 
@@ -3369,7 +3370,7 @@ After removal of duplicates : [1, 0, 3, 2]
 
 ```
 
-# Hello world/Graphical     :basic_language_learning:gui:simple:<a id="sec-34"></a>
+# Hello world/Graphical<a id="sec-34"></a>
 
 Task
 
@@ -3406,7 +3407,7 @@ fn main() {
 }
 ```
 
-# Binary search     :classic_cs_problems_and_programs:recursion:<a id="sec-35"></a>
+# Binary search<a id="sec-35"></a>
 
 A binary search divides a range of values into halves, and continues to narrow down the field of search until the unknown value is found. It is the classic example of a "divide and conquer" algorithm.
 
@@ -3618,7 +3619,7 @@ fn binary_search<T: Ord>(arr: &[T], elem: &T) -> Option<usize>
  
 ```
 
-# ABC Problem     :games:puzzles:<a id="sec-36"></a>
+# ABC Problem<a id="sec-36"></a>
 
 You are given a collection of ABC blocks   (maybe like the ones you had when you were a kid).
 
@@ -3727,7 +3728,7 @@ CONFUSE -> true
 
 ```
 
-# Loops/For     :iteration:simple:<a id="sec-37"></a>
+# Loops/For<a id="sec-37"></a>
 
 “For”   loops are used to make some block of code be iterated a number of times, setting a variable or parameter to a monotonically increasing integer value for each execution of the block of code.
 
@@ -3769,7 +3770,7 @@ fn main() {
 }
 ```
 
-# N-queens problem     :puzzles:<a id="sec-38"></a>
+# N-queens problem<a id="sec-38"></a>
 
 Solve the eight queens puzzle.
 
@@ -3901,7 +3902,7 @@ impl ToString for NQueensSolution {
 }
 ```
 
-# Happy numbers     :arithmetic_operations:<a id="sec-39"></a>
+# Happy numbers<a id="sec-39"></a>
 
 From Wikipedia, the free encyclopedia:
 
@@ -3967,7 +3968,7 @@ Output:
 
 ```
 
-# Pascal's triangle     :arithmetic_operations:<a id="sec-40"></a>
+# Pascal's triangle<a id="sec-40"></a>
 
 Pascal's triangle is an arithmetic and geometric figure often associated with the name of Blaise Pascal, but also studied centuries earlier in India, Persia, China and elsewhere.
 
@@ -4034,7 +4035,7 @@ fn pascal_triangle(n: u64)
  
 ```
 
-# Arithmetic/Integer     :basic_data_operations:simple:arithmetic_operations:basic_language_learning:arithmetic:<a id="sec-41"></a>
+# Arithmetic/Integer<a id="sec-41"></a>
 
 Task
 
@@ -4066,7 +4067,7 @@ fn main() {
 }
 ```
 
-# Day of the week     :date_and_time:<a id="sec-42"></a>
+# Day of the week<a id="sec-42"></a>
 
 A company decides that whenever Xmas falls on a Sunday they will give their workers all extra paid holidays so that, together with any public holidays, workers will not have to work the following week (between the 25th of December and the first of January).
 
@@ -4094,7 +4095,7 @@ Years = [2011, 2016, 2022, 2033, 2039, 2044, 2050, 2061, 2067, 2072, 2078, 2089,
 
 ```
 
-# Filter     :iteration:basic_language_learning:<a id="sec-43"></a>
+# Filter<a id="sec-43"></a>
 
 Task
 
@@ -4128,7 +4129,7 @@ original vec filtered:
 [2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
 
-# Array concatenation     :data_structures:simple:<a id="sec-44"></a>
+# Array concatenation<a id="sec-44"></a>
 
 Task
 
@@ -4188,7 +4189,7 @@ let is_odd = |x: i32| x % 2 != 0;
 let is_even = |x: i32| x % 2 == 0;
 ```
 
-# Binary digits     :radices:basic_language_learning:<a id="sec-46"></a>
+# Binary digits<a id="sec-46"></a>
 
 Task
 
@@ -4228,7 +4229,7 @@ Outputs:
 111
 ```
 
-# Roman numerals/Encode     :string_manipulation:<a id="sec-47"></a>
+# Roman numerals/Encode<a id="sec-47"></a>
 
 Task
 
@@ -4291,7 +4292,7 @@ Output:
 
 ```
 
-# Loops/While     :simple:conditional_loops:iteration:<a id="sec-48"></a>
+# Loops/While<a id="sec-48"></a>
 
 Task
 
@@ -4315,7 +4316,7 @@ fn main() {
 }
 ```
 
-# Loops/For with a specified step     :simple:iteration:<a id="sec-49"></a>
+# Loops/For with a specified step<a id="sec-49"></a>
 
 Demonstrate a for-loop where the step-value is greater than one.
 
@@ -4363,7 +4364,7 @@ fn main() {
 }
 ```
 
-# Tokenize a string     :string_manipulation:simple:<a id="sec-50"></a>
+# Tokenize a string<a id="sec-50"></a>
 
 Separate the string "Hello,How,Are,You,Today" by commas into an array (or list) so that each element of it stores a different word. Display the words to the 'user', in the simplest manner possible, separated by a period. To simplify, you may display a trailing period.
 
@@ -4379,7 +4380,7 @@ fn main() {
 }
 ```
 
-# Factors of an integer     :basic_data_operations:arithmetic_operations:basic_language_learning:mathematical_operations:<a id="sec-51"></a>
+# Factors of an integer<a id="sec-51"></a>
 
 Task
 
@@ -4416,7 +4417,7 @@ fn factor(num: i32) -> Vec<i32> {
 }
 ```
 
-# Sorting algorithms/Quicksort     :wikipediasourced:recursion:sorting_algorithms:<a id="sec-52"></a>
+# Sorting algorithms/Quicksort<a id="sec-52"></a>
 
 This page uses content from Wikipedia. The original article was at Quicksort. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -4560,7 +4561,7 @@ Before: ["airplane", "art", "beach", "car", "hotel", "house"]
 After:  ["car", "art", "house", "hotel", "beach", "airplane"]
 ```
 
-# Loops/Infinite     :simple:iteration:<a id="sec-53"></a>
+# Loops/Infinite<a id="sec-53"></a>
 
 Task
 
@@ -4578,7 +4579,7 @@ fn main() {
 }
 ```
 
-# Boolean values     :basic_language_learning:simple:<a id="sec-54"></a>
+# Boolean values<a id="sec-54"></a>
 
 Task
 
@@ -4592,7 +4593,7 @@ Related tasks
 
 Booleans are expressed using the bool type and the two literals true and false. The compiler prevents any other values from being assigned to a bool variable. This behavior is not guaranteed inside blocks labeled as unsafe, where it is the programmers responsibility to ensure this behavior.
 
-# Caesar cipher     :string_manipulation:encryption:<a id="sec-55"></a>
+# Caesar cipher<a id="sec-55"></a>
 
 Task
 
@@ -4651,7 +4652,7 @@ fn exit_err<T: Display>(msg: T, code: i32) -> ! {
 }
 ```
 
-# Increment a numerical string     :simple:text_processing:<a id="sec-56"></a>
+# Increment a numerical string<a id="sec-56"></a>
 
 Task
 
@@ -4675,7 +4676,7 @@ Output:
 "0"
 ```
 
-# Sum and product of an array     :iteration:arithmetic_operations:<a id="sec-57"></a>
+# Sum and product of an array<a id="sec-57"></a>
 
 Compute the sum and product of an array of integers.
 
@@ -4698,7 +4699,7 @@ fn main() {
  
 ```
 
-# Anagrams     :text_processing:<a id="sec-58"></a>
+# Anagrams<a id="sec-58"></a>
 
 When two or more words are composed of the same characters, but in a different order, they are called anagrams.
 
@@ -4810,7 +4811,7 @@ fn find_anagrams<P: AsRef<Path>>(file: P) -> io::Result<Vec<Vec<String>>> {
 }
 ```
 
-# File input/output     :file_handling:selection_short_circuit_console_program_basics:simple:<a id="sec-59"></a>
+# File input/output<a id="sec-59"></a>
 
 Task
 
@@ -4869,7 +4870,7 @@ fn exit_err<T: fmt::Display>(msg: T, code: i32) -> ! {
 }
 ```
 
-# Permutations     :discrete_math:<a id="sec-60"></a>
+# Permutations<a id="sec-60"></a>
 
 Task
 
@@ -4959,7 +4960,7 @@ fn main() {
 }
 ```
 
-# Character codes     :string_manipulation:text_processing:simple:basic_language_learning:<a id="sec-61"></a>
+# Character codes<a id="sec-61"></a>
 
 Task
 
@@ -4994,7 +4995,7 @@ a
 π
 ```
 
-# Stack     :classic_cs_problems_and_programs:data_structures:<a id="sec-62"></a>
+# Stack<a id="sec-62"></a>
 
 A stack is a container of elements with   last in, first out   access policy.   Sometimes it also called LIFO.
 
@@ -5165,7 +5166,7 @@ impl<T> Drop for Stack<T> {
 }
 ```
 
-# Sorting algorithms/Bubble sort     :sorting_algorithms:<a id="sec-63"></a>
+# Sorting algorithms/Bubble sort<a id="sec-63"></a>
 
 Task
 
@@ -5233,7 +5234,7 @@ fn main() {
 }
 ```
 
-# Combinations     :discrete_math:<a id="sec-64"></a>
+# Combinations<a id="sec-64"></a>
 
 Task
 
@@ -5308,7 +5309,7 @@ fn main() {
  
 ```
 
-# Command-line arguments     :initialization:programming_environment_operations:basic_language_learning:selection_short_circuit_console_program_basics:<a id="sec-65"></a>
+# Command-line arguments<a id="sec-65"></a>
 
 Scripted main
 
@@ -5339,7 +5340,7 @@ Run:
 ["./program", "-c", "alpha beta", "-h", "gamma"]
 ```
 
-# Rot-13     :encryption:string_manipulation:<a id="sec-66"></a>
+# Rot-13<a id="sec-66"></a>
 
 Task
 
@@ -5545,7 +5546,7 @@ MDCLXVI         = 1666
 MMMDCCCLXXXVIII = 3888
 ```
 
-# Ethiopian multiplication     :mumps:arithmetic_operations:arithmetic:<a id="sec-69"></a>
+# Ethiopian multiplication<a id="sec-69"></a>
 
 Ethiopian multiplication is a method of multiplying integers using only addition, doubling, and halving.
 
@@ -5670,7 +5671,7 @@ Output:
          578
 ```
 
-# Search a list     :text_processing:<a id="sec-70"></a>
+# Search a list<a id="sec-70"></a>
 
 Task[edit]
 
@@ -5863,7 +5864,7 @@ Output:
 
 ```
 
-# Compound data type     :basic_language_learning:data_structures:<a id="sec-72"></a>
+# Compound data type<a id="sec-72"></a>
 
 Task
 
@@ -5923,7 +5924,7 @@ Tuples[edit]
 }
 ```
 
-# String case     :string_manipulation:encodings:object_pascal:<a id="sec-73"></a>
+# String case<a id="sec-73"></a>
 
 Task
 
@@ -5952,7 +5953,7 @@ fn main() {
 }
 ```
 
-# Towers of Hanoi     :puzzles:games:recursion:classic_cs_problems_and_programs:<a id="sec-74"></a>
+# Towers of Hanoi<a id="sec-74"></a>
 
 Task
 
@@ -5974,7 +5975,7 @@ fn main() {
 }
 ```
 
-# Higher-order functions     :programming_language_concepts:functions_and_subroutines:<a id="sec-75"></a>
+# Higher-order functions<a id="sec-75"></a>
 
 Task
 
@@ -6008,7 +6009,7 @@ Output:
 100
 ```
 
-# Loops/Do-while     :conditional_loops:simple:iteration:<a id="sec-76"></a>
+# Loops/Do-while<a id="sec-76"></a>
 
 Start with a value at 0. Loop while value mod 6 is not equal to 0. Each time through the loop, add 1 to the value then print it. The loop must execute at least once.
 
@@ -6033,7 +6034,7 @@ loop {
 }
 ```
 
-# Integer comparison     :arithmetic_operations:basic_data_operations:simple:<a id="sec-77"></a>
+# Integer comparison<a id="sec-77"></a>
 
 Get two integers from the user.
 
@@ -6073,7 +6074,7 @@ fn main() {
 }
 ```
 
-# Sum of a series     :arithmetic_operations:<a id="sec-78"></a>
+# Sum of a series<a id="sec-78"></a>
 
 Compute the   nth   term of a series,   i.e. the sum of the   n   first terms of the corresponding sequence.
 
@@ -6107,7 +6108,7 @@ fn main() {
  
 ```
 
-# Bitwise operations     :discrete_math:basic_data_operations:<a id="sec-79"></a>
+# Bitwise operations<a id="sec-79"></a>
 
 Task
 
@@ -6146,7 +6147,7 @@ a >> 3 = 00001101
 
 ```
 
-# Knuth shuffle     :classic_cs_problems_and_programs:<a id="sec-80"></a>
+# Knuth shuffle<a id="sec-80"></a>
 
 The   Knuth shuffle   (a.k.a. the Fisher-Yates shuffle)   is an algorithm for randomly shuffling the elements of an array.
 
@@ -6219,7 +6220,7 @@ fn main() {
 }
 ```
 
-# Dot product     :geometry:<a id="sec-81"></a>
+# Dot product<a id="sec-81"></a>
 
 Task
 
@@ -6298,7 +6299,7 @@ fn main() {
 }
 ```
 
-# Return multiple values     :functions_and_subroutines:basic_language_learning:<a id="sec-82"></a>
+# Return multiple values<a id="sec-82"></a>
 
 Task
 
@@ -6325,7 +6326,7 @@ Hello,42
 
 ```
 
-# Find limit of recursion     :simple:programming_environment_operations:selection_short_circuit_console_program_basics:basic_language_learning:<a id="sec-83"></a>
+# Find limit of recursion<a id="sec-83"></a>
 
 Task
 
@@ -6476,7 +6477,7 @@ sys	0m0.000s
 
 ```
 
-# Mandelbrot set     :geometry:graphics:raster_graphics_operations:fractals:wikipediasourced:<a id="sec-86"></a>
+# Mandelbrot set<a id="sec-86"></a>
 
 This page uses content from Wikipedia. The original article was at Mandelbrot<sub>set</sub>. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -6534,7 +6535,7 @@ fn main() {
 }
 ```
 
-# Luhn test of credit card numbers     :checksums:<a id="sec-87"></a>
+# Luhn test of credit card numbers<a id="sec-87"></a>
 
 The Luhn test is used by some credit card companies to distinguish valid credit card numbers from what could be a random selection of digits.
 
@@ -6615,7 +6616,7 @@ Output:
 1234567812345670: true
 ```
 
-# Copy a string     :string_manipulation:simple:basic_language_learning:<a id="sec-88"></a>
+# Copy a string<a id="sec-88"></a>
 
 This task is about copying a string.
 
@@ -6638,7 +6639,7 @@ fn main() {
 s1 = A String, s2 = Another String
 ```
 
-# Function composition     :higher_order_functions:<a id="sec-89"></a>
+# Function composition<a id="sec-89"></a>
 
 Task
 
@@ -6686,7 +6687,7 @@ fn compose<'a,F,G,T,U,V>(f: F, g: G) -> impl Fn(T) -> V + 'a
 }
 ```
 
-# Primality by trial division     :prime_numbers:<a id="sec-90"></a>
+# Primality by trial division<a id="sec-90"></a>
 
 Task
 
@@ -6741,7 +6742,7 @@ Output:
 29 is prime!
 ```
 
-# Include a file     :initialization:basic_language_learning:<a id="sec-91"></a>
+# Include a file<a id="sec-91"></a>
 
 Task
 
@@ -6766,7 +6767,7 @@ fn main() {
 }
 ```
 
-# Loops/N plus one half     :simple:iteration:<a id="sec-92"></a>
+# Loops/N plus one half<a id="sec-92"></a>
 
 Quite often one needs loops which, in the last iteration, execute only part of the loop body.
 
@@ -6797,7 +6798,7 @@ fn main() {
 }
 ```
 
-# Determine if a string is numeric     :text_processing:simple:string_manipulation:<a id="sec-93"></a>
+# Determine if a string is numeric<a id="sec-93"></a>
 
 Task
 
@@ -6943,7 +6944,7 @@ to this:
 while self.index < self.length - 1 && self.arr[self.index + 1] == self.arr[self.index] + T::one() {
 ```
 
-# Leap year     :date_and_time:<a id="sec-95"></a>
+# Leap year<a id="sec-95"></a>
 
 See Also
 
@@ -6956,7 +6957,7 @@ fn is_leap(year: i32) -> bool {
 }
 ```
 
-# Classes     :object_oriented:type_system:basic_language_learning:<a id="sec-96"></a>
+# Classes<a id="sec-96"></a>
 
 In object-oriented programming class is a set (a transitive closure) of types bound by the relation of inheritance. It is said that all types derived from some base type T and the type T itself form a class T.
 
@@ -7013,7 +7014,7 @@ fn main () {
  
 ```
 
-# Associative array/Iteration     :basic_language_learning:data_structures:iteration:<a id="sec-97"></a>
+# Associative array/Iteration<a id="sec-97"></a>
 
 Show how to iterate over the key-value pairs of an associative array, and print each pair out.
 
@@ -7051,7 +7052,7 @@ Great Britain has had 246 gold medals, 276 silver medals, and 284 bronze medals
 
 ```
 
-# Identity matrix     :matrices:<a id="sec-98"></a>
+# Identity matrix<a id="sec-98"></a>
 
 Task
 
@@ -7113,7 +7114,7 @@ fn main() {
  
 ```
 
-# Loops/Downward for     :simple:iteration:<a id="sec-99"></a>
+# Loops/Downward for<a id="sec-99"></a>
 
 Task
 
@@ -7131,7 +7132,7 @@ fn main() {
 }
 ```
 
-# Perfect numbers     :arbitrary_precision:discrete_math:<a id="sec-100"></a>
+# Perfect numbers<a id="sec-100"></a>
 
 Write a function which says whether a number is perfect.
 
@@ -7173,7 +7174,7 @@ fn main ( ) {
  
 ```
 
-# Y combinator     :recursion:classic_cs_problems_and_programs:<a id="sec-101"></a>
+# Y combinator<a id="sec-101"></a>
 
 In strict functional programming and the lambda calculus, functions (lambda expressions) don't have state and are only allowed to refer to arguments of enclosing functions. This rules out the usual definition of a recursive function wherein a function is associated with the state of a variable and this variable's state is used in the body of the function.
 
@@ -7289,7 +7290,7 @@ Output:
 89
 ```
 
-# Matrix multiplication     :matrices:<a id="sec-102"></a>
+# Matrix multiplication<a id="sec-102"></a>
 
 Task
 
@@ -7361,7 +7362,7 @@ fn main()
  
 ```
 
-# Null object     :simple:basic_language_learning:<a id="sec-103"></a>
+# Null object<a id="sec-103"></a>
 
 Null (or nil) is the computer science concept of an undefined or unbound object. Some languages have an explicit way to access the null object, and some don't. Some languages distinguish the null object from undefined values, and some don't.
 
@@ -7394,7 +7395,7 @@ fn main() {
 }
 ```
 
-# Sort an integer array     :sorting:<a id="sec-104"></a>
+# Sort an integer array<a id="sec-104"></a>
 
 Sort an array (or list) of integers in ascending numerical order.
 
@@ -7413,7 +7414,7 @@ fn main() {
 }
 ```
 
-# Execute a system command     :programming_environment_operations:<a id="sec-105"></a>
+# Execute a system command<a id="sec-105"></a>
 
 Task
 
@@ -7434,7 +7435,7 @@ fn main() {
  
 ```
 
-# Read entire file     :file_handling:<a id="sec-106"></a>
+# Read entire file<a id="sec-106"></a>
 
 Task
 
@@ -7462,7 +7463,7 @@ fn main() {
 }
 ```
 
-# Program termination     :simple:basic_language_learning:<a id="sec-107"></a>
+# Program termination<a id="sec-107"></a>
 
 Task
 
@@ -7531,7 +7532,7 @@ fn main() {
 
 Now the panic will be contained inside the background thread and will not affect the rest of the program.
 
-# Matrix transposition     :matrices:<a id="sec-108"></a>
+# Matrix transposition<a id="sec-108"></a>
 
 Transpose an arbitrarily sized rectangular Matrix.
 
@@ -7588,7 +7589,7 @@ let c = Matrix::transpose_m(a);
  
 ```
 
-# Sum of squares     :arithmetic_operations:<a id="sec-109"></a>
+# Sum of squares<a id="sec-109"></a>
 
 Task
 
@@ -7614,7 +7615,7 @@ fn main() {
 }
 ```
 
-# Literals/Integer     :basic_language_learning:simple:<a id="sec-110"></a>
+# Literals/Integer<a id="sec-110"></a>
 
 Some programming languages have ways of expressing integer literals in bases other than the normal base ten.
 
@@ -7640,7 +7641,7 @@ Related task
 10i32  // With or without underscores
 ```
 
-# Logical operations     :simple:basic_data_operations:<a id="sec-111"></a>
+# Logical operations<a id="sec-111"></a>
 
 Task
 
@@ -7672,7 +7673,7 @@ fn main() {
 
 The Boolean operators || and && are more efficient versions of | and & in that the right-hand operand is only evaluated when the left-hand operand does not already determine the result of the expression.
 
-# Catalan numbers     :arithmetic_operations:memoization:wikipediasourced:<a id="sec-112"></a>
+# Catalan numbers<a id="sec-112"></a>
 
 This page uses content from Wikipedia. The original article was at Catalan numbers. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -7733,7 +7734,7 @@ c(14) = 2674440
 c(15) = 9694845
 ```
 
-# Integer sequence     :iteration:<a id="sec-113"></a>
+# Integer sequence<a id="sec-113"></a>
 
 Task
 
@@ -7770,7 +7771,7 @@ fn main() {
 }
 ```
 
-# Levenshtein distance     :wikipediasourced:<a id="sec-114"></a>
+# Levenshtein distance<a id="sec-114"></a>
 
 This page uses content from Wikipedia. The original article was at Levenshtein distance. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -7841,7 +7842,7 @@ Output:
 8
 ```
 
-# Cumulative standard deviation     :stateful_transactions:probability_and_statistics:<a id="sec-115"></a>
+# Cumulative standard deviation<a id="sec-115"></a>
 
 Task[edit]
 
@@ -7932,7 +7933,7 @@ Output:
 
 ```
 
-# Evaluate binomial coefficients     :mathematical_operations:<a id="sec-116"></a>
+# Evaluate binomial coefficients<a id="sec-116"></a>
 
 This programming task, is to calculate ANY binomial coefficient.
 
@@ -7984,7 +7985,7 @@ Output:
 10
 ```
 
-# Multiplication tables     :arithmetic_operations:simple:<a id="sec-117"></a>
+# Multiplication tables<a id="sec-117"></a>
 
 Task
 
@@ -8018,7 +8019,7 @@ fn main() {
 }
 ```
 
-# Mutual recursion     :recursion:<a id="sec-118"></a>
+# Mutual recursion<a id="sec-118"></a>
 
 Two functions are said to be mutually recursive if the first calls the second, and in turn the second calls the first.
 
@@ -8103,7 +8104,7 @@ The smallest number whose square ends in 269696 is 25264
 
 ```
 
-# Loops/Break     :iteration:simple:loop_modifiers:<a id="sec-120"></a>
+# Loops/Break<a id="sec-120"></a>
 
 Task
 
@@ -8139,7 +8140,7 @@ fn main() {
  
 ```
 
-# Count occurrences of a substring     :string_manipulation:<a id="sec-121"></a>
+# Count occurrences of a substring<a id="sec-121"></a>
 
 Task
 
@@ -8241,7 +8242,7 @@ Output:
 
 The root mean square is: 6.204837
 
-# Short-circuit evaluation     :control_structures:programming_language_concepts:<a id="sec-123"></a>
+# Short-circuit evaluation<a id="sec-123"></a>
 
 Assume functions   a   and   b   return boolean values,   and further, the execution of function   b   takes considerable resources without side effects, and is to be minimized.
 
@@ -8322,7 +8323,7 @@ false or false == false
 
 ```
 
-# Look-and-say sequence     :text_processing:sqlite:<a id="sec-124"></a>
+# Look-and-say sequence<a id="sec-124"></a>
 
 The   Look and say sequence   is a recursively defined sequence of numbers studied most notably by   John Conway.
 
@@ -8396,7 +8397,7 @@ Sequence 8: [3, 1, 1, 3, 1, 2, 1, 1, 1, 3, 1, 2, 2, 1]
 Sequence 9: [1, 3, 2, 1, 1, 3, 1, 1, 1, 2, 3, 1, 1, 3, 1, 1, 2, 2, 1, 1]
 ```
 
-# JSON     :data_structures:<a id="sec-125"></a>
+# JSON<a id="sec-125"></a>
 
 Load a JSON string into a data structure. Also, create a new data structure and serialize it into JSON.
 
@@ -8427,7 +8428,7 @@ Output:
 {"name":"pengu","born":1999}
 ```
 
-# String concatenation     :basic_language_learning:basic_data_operations:string_manipulation:simple:<a id="sec-126"></a>
+# String concatenation<a id="sec-126"></a>
 
 Create a string variable equal to any text value. Create another string variable whose value is the original variable concatenated with another string literal.
 
@@ -8453,7 +8454,7 @@ fn main() {
 }
 ```
 
-# Arithmetic-geometric mean     :wikipediasourced:<a id="sec-127"></a>
+# Arithmetic-geometric mean<a id="sec-127"></a>
 
 This page uses content from Wikipedia. The original article was at Arithmetic-geometric mean. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -8516,7 +8517,7 @@ The arithmetic-geometric mean is 1.456791
 
 ```
 
-# Array length     :simple:<a id="sec-128"></a>
+# Array length<a id="sec-128"></a>
 
 Task
 
@@ -8539,7 +8540,7 @@ fn main() {
  
 ```
 
-# Averages/Median     :probability_and_statistics:<a id="sec-129"></a>
+# Averages/Median<a id="sec-129"></a>
 
 Task[edit]
 
@@ -8603,7 +8604,7 @@ Output:
 9
 ```
 
-# Loops/Nested     :loop_modifiers:iteration:<a id="sec-130"></a>
+# Loops/Nested<a id="sec-130"></a>
 
 Show a nested loop which searches a two-dimensional array filled with random numbers uniformly distributed over {\displaystyle [1,\ldots ,20]} .
 
@@ -8649,7 +8650,7 @@ Output:
 5 14 20
 ```
 
-# Generate lower case ASCII alphabet     :string_manipulation:<a id="sec-131"></a>
+# Generate lower case ASCII alphabet<a id="sec-131"></a>
 
 Task
 
@@ -8679,7 +8680,7 @@ Output:
 
 ```
 
-# Abstract type     :object_oriented:basic_language_learning:type_system:<a id="sec-132"></a>
+# Abstract type<a id="sec-132"></a>
 
 Abstract type is a type without instances or without definition.
 
@@ -8727,7 +8728,7 @@ trait Shape {
 }
 ```
 
-# Arbitrary-precision integers (included)     :arbitrary_precision:<a id="sec-133"></a>
+# Arbitrary-precision integers (included)<a id="sec-133"></a>
 
 Using the in-built capabilities of your language, calculate the integer value of:
 
@@ -8787,7 +8788,7 @@ First and last digits: "62060698786608744707".."92256259918212890625"
 
 ```
 
-# Closures/Value capture     :functions_and_subroutines:<a id="sec-134"></a>
+# Closures/Value capture<a id="sec-134"></a>
 
 Task
 
@@ -8869,7 +8870,7 @@ Output:
 
 ```
 
-# Strip a set of characters from a string     :string_manipulation:<a id="sec-136"></a>
+# Strip a set of characters from a string<a id="sec-136"></a>
 
 Task
 
@@ -8974,7 +8975,7 @@ fn main() {
 }
 ```
 
-# Longest common subsequence     :memoization:recursion:<a id="sec-138"></a>
+# Longest common subsequence<a id="sec-138"></a>
 
 The longest common subsequence (or LCS) of groups A and B is the longest group of elements from A and B that are common between the two groups and in the same order in each group. For example, the sequences "1234" and "1224533324" have an LCS of "1234":
 
@@ -9058,7 +9059,7 @@ fn main() {
 }
 ```
 
-# Detect division by zero     :simple:<a id="sec-139"></a>
+# Detect division by zero<a id="sec-139"></a>
 
 Task
 
@@ -9078,7 +9079,7 @@ fn main() {
 }
 ```
 
-# Exponentiation operator     :arithmetic:arithmetic_operations:<a id="sec-140"></a>
+# Exponentiation operator<a id="sec-140"></a>
 
 Most programming languages have a built-in implementation of exponentiation.
 
@@ -9117,7 +9118,7 @@ fn pow<T>(mut base: T, mut exp: usize) -> T
 }
 ```
 
-# Arithmetic/Complex     :arithmetic_operations:<a id="sec-141"></a>
+# Arithmetic/Complex<a id="sec-141"></a>
 
 A   complex number   is a number which can be written as: {\displaystyle a+b&times; i} (sometimes shown as: {\displaystyle b+a&times; i} where   {\displaystyle a}   and   {\displaystyle b}   are real numbers,   and   {\displaystyle i}   is   √ -1 
 
@@ -9200,7 +9201,7 @@ Output:
 13398445413854501
 ```
 
-# Haversine formula     :geometry:wikipediasourced:<a id="sec-143"></a>
+# Haversine formula<a id="sec-143"></a>
 
 This page uses content from Wikipedia. The original article was at Haversine formula. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -9280,7 +9281,7 @@ fn main() {
 Distance: 2887.2599506071106 km (1794.060157807846 mi)
 ```
 
-# First-class functions     :programming_language_concepts:functions_and_subroutines:<a id="sec-144"></a>
+# First-class functions<a id="sec-144"></a>
 
 A language has first-class functions if it can do each of the following without recursively invoking a compiler or interpreter or otherwise metaprogramming:
 
@@ -9325,7 +9326,7 @@ fn compose<'a, F, G, T, U, V>(f: F, g: G) -> impl 'a + Fn(T) -> V
 }
 ```
 
-# Queue/Definition     :data_structures:<a id="sec-145"></a>
+# Queue/Definition<a id="sec-145"></a>
 
 Illustration of FIFO behavior
 
@@ -9502,7 +9503,7 @@ impl<'a, T> Iterator for IterMut<'a, T> {
 }
 ```
 
-# Create an HTML table     :html:<a id="sec-146"></a>
+# Create an HTML table<a id="sec-146"></a>
 
 Create an HTML table.
 
@@ -9549,7 +9550,7 @@ Output:
 </table>
 ```
 
-# Program name     :basic_language_learning:initialization:<a id="sec-147"></a>
+# Program name<a id="sec-147"></a>
 
 The task is to programmatically obtain the name used to invoke the program. (For example determine whether the user ran "python hello.py", or "python hellocaller.py", a program importing the code from "hello.py".)
 
@@ -9575,7 +9576,7 @@ $ ./scriptname
 Program: ./scriptname
 ```
 
-# Sorting algorithms/Insertion sort     :sorting_algorithms:wikipediasourced:<a id="sec-148"></a>
+# Sorting algorithms/Insertion sort<a id="sec-148"></a>
 
 This page uses content from Wikipedia. The original article was at Insertion sort. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -9686,7 +9687,7 @@ middle_three_digits(-2002) returned: Failure, Even number of digits
 middle_three_digits(0) returned: Failure, Too short
 ```
 
-# Real constants and functions     :basic_language_learning:simple:arithmetic_operations:<a id="sec-150"></a>
+# Real constants and functions<a id="sec-150"></a>
 
 Task
 
@@ -9725,7 +9726,7 @@ fn main() {
 }
 ```
 
-# Loops/Continue     :iteration:loop_modifiers:<a id="sec-151"></a>
+# Loops/Continue<a id="sec-151"></a>
 
 Task
 
@@ -9756,7 +9757,7 @@ fn main() {
 }
 ```
 
-# Read a file line by line     :simple:file_handling:<a id="sec-152"></a>
+# Read a file line by line<a id="sec-152"></a>
 
 Read a file one line at a time, as opposed to reading the entire file at once.
 
@@ -9783,7 +9784,7 @@ First line of the file!
 Second line of the file!
 ```
 
-# Assertions     :basic_language_learning:<a id="sec-153"></a>
+# Assertions<a id="sec-153"></a>
 
 Assertions are a way of breaking out of code when there is an error or an unexpected input.
 
@@ -9801,7 +9802,7 @@ assert_eq!(x, 42);
  
 ```
 
-# Averages/Simple moving average     :probability_and_statistics:<a id="sec-154"></a>
+# Averages/Simple moving average<a id="sec-154"></a>
 
 Computing the simple moving average of a series of numbers.
 
@@ -9981,7 +9982,7 @@ Number: 1 | Average: 3
 
 ```
 
-# Knapsack problem/0-1     :memoization:puzzles:classic_cs_problems_and_programs:<a id="sec-155"></a>
+# Knapsack problem/0-1<a id="sec-155"></a>
 
 A tourist wants to make a good trip at the weekend with his friends.
 
@@ -10108,7 +10109,7 @@ Total weight: 396
 Total value: 1030
 ```
 
-# Date format     :date_and_time:text_processing:clarified_and_needing_review:<a id="sec-156"></a>
+# Date format<a id="sec-156"></a>
 
 Task
 
@@ -10126,7 +10127,7 @@ fn main(){
 }
 ```
 
-# Hello world/Newline omission     :basic_language_learning:<a id="sec-157"></a>
+# Hello world/Newline omission<a id="sec-157"></a>
 
 Some languages automatically insert a newline after outputting a string, unless measures are taken to prevent its output.
 
@@ -10144,7 +10145,7 @@ fn main () {
 }
 ```
 
-# Monty Hall problem     :discrete_math:games:probability_and_statistics:<a id="sec-158"></a>
+# Monty Hall problem<a id="sec-158"></a>
 
 Run random simulations of the Monty Hall game. Show the effects of a strategy of the contestant always keeping his first guess so it can be contrasted with the strategy of the contestant always switching his guess.
 
@@ -10239,7 +10240,7 @@ The resulting program will compile and run just fine, producing the output:
 The three dogs are named Benjamin, Samba and Bernie.
 ```
 
-# Infinity     :discrete_math:basic_language_learning:irrational_numbers:<a id="sec-160"></a>
+# Infinity<a id="sec-160"></a>
 
 Task
 
@@ -10260,7 +10261,7 @@ fn main() {
 }
 ```
 
-# Formatted numeric output     :simple:text_processing:basic_language_learning:<a id="sec-161"></a>
+# Formatted numeric output<a id="sec-161"></a>
 
 Task
 
@@ -10291,7 +10292,7 @@ Output:
 
 ```
 
-# Averages/Pythagorean means     :geometry:<a id="sec-162"></a>
+# Averages/Pythagorean means<a id="sec-162"></a>
 
 Task[edit]
 
@@ -10434,7 +10435,7 @@ Output:
 
 ```
 
-# Create a two-dimensional array at runtime     :basic_language_learning:data_structures:<a id="sec-164"></a>
+# Create a two-dimensional array at runtime<a id="sec-164"></a>
 
 Get two integers from the user, then create a two-dimensional array where the two dimensions have the sizes given by those numbers, and which can be accessed in the most natural way possible. Write some element of that array, and then output that element. Finally destroy the array if not done by the language itself.
 
@@ -10456,7 +10457,7 @@ fn main() {
 }
 ```
 
-# Hello world/Standard error     :streams:selection_short_circuit_console_program_basics:basic_language_learning:<a id="sec-165"></a>
+# Hello world/Standard error<a id="sec-165"></a>
 
 A common practice in computing is to send error messages to a different output stream than normal text console messages.
 
@@ -10497,7 +10498,7 @@ fn main() {
 }
 ```
 
-# HTTP     :networking_and_web_interaction:programming_environment_operations:<a id="sec-166"></a>
+# HTTP<a id="sec-166"></a>
 
 Task
 
@@ -10535,7 +10536,7 @@ fn main() {
  
 ```
 
-# Zero to the zero power     :simple:<a id="sec-167"></a>
+# Zero to the zero power<a id="sec-167"></a>
 
 Some programming languages are not exactly consistent   (with other programming languages)   when   raising zero to the zeroth power:     00
 
@@ -10571,7 +10572,7 @@ Output:
 1
 ```
 
-# Greatest subsequential sum     :arithmetic_operations:<a id="sec-168"></a>
+# Greatest subsequential sum<a id="sec-168"></a>
 
 Task
 
@@ -10609,7 +10610,7 @@ Output:
 Max subsequence sum: 96 for [1, 2, 39, 34, 20]
 ```
 
-# Pythagorean triples     :arbitrary_precision:geometry:<a id="sec-169"></a>
+# Pythagorean triples<a id="sec-169"></a>
 
 A Pythagorean triple is defined as three positive integers {\displaystyle (a,b,c)} where {\displaystyle a<b<c} , and {\displaystyle a<sup>2</sup>+b<sup>2</sup>=c<sup>2</sup>.}
 
@@ -10711,7 +10712,7 @@ user	3m39.239s
 sys	0m0.024s
 ```
 
-# User input/Text     :keyboard_input:selection_short_circuit_console_program_basics:basic_language_learning:simple:text_processing:<a id="sec-170"></a>
+# User input/Text<a id="sec-170"></a>
 
 In this task, the goal is to input a string and the integer 75000, from the text console.
 
@@ -10754,7 +10755,7 @@ fn exit_err<T: Display>(msg: T, code: i32) -> ! {
 }
 ```
 
-# Ordered words     :text_processing:<a id="sec-171"></a>
+# Ordered words<a id="sec-171"></a>
 
 An   ordered word   is a word in which the letters appear in alphabetic order.
 
@@ -10820,7 +10821,7 @@ fn main() {
 }
 ```
 
-# Sleep     :basic_language_learning:<a id="sec-172"></a>
+# Sleep<a id="sec-172"></a>
 
 Task
 
@@ -10854,7 +10855,7 @@ fn main() {
 }
 ```
 
-# Align columns     :text_processing:<a id="sec-173"></a>
+# Align columns<a id="sec-173"></a>
 
 Given a text file of many lines, where fields within a line are delineated by a single 'dollar' character, write a program that aligns each column of fields by ensuring that words in each column are separated by at least one space. Further, allow for each word in a column to be either left justified, right justified, or center justified within its column.
 
@@ -10959,7 +10960,7 @@ justified,      right justified,     or center justified     within      its col
 
 ```
 
-# String matching     :simple:string_manipulation:basic_data_operations:<a id="sec-174"></a>
+# String matching<a id="sec-174"></a>
 
 Task
 
@@ -11016,7 +11017,7 @@ Contains "wi" false
 
 ```
 
-# Enumerations     :basic_language_learning:<a id="sec-175"></a>
+# Enumerations<a id="sec-175"></a>
 
 Task
 
@@ -11073,7 +11074,7 @@ fn main() {
 }
 ```
 
-# Tree traversal     :recursion:data_structures:<a id="sec-177"></a>
+# Tree traversal<a id="sec-177"></a>
 
 Task
 
@@ -11379,7 +11380,7 @@ Feed cat
 Clear drains
 ```
 
-# Pangram checker     :string_manipulation:<a id="sec-179"></a>
+# Pangram checker<a id="sec-179"></a>
 
 A pangram is a sentence that contains all the letters of the English alphabet at least once.
 
@@ -11461,7 +11462,7 @@ fn main() {
 }
 ```
 
-# Create a file     :simple:file_system_operations:<a id="sec-180"></a>
+# Create a file<a id="sec-180"></a>
 
 In this task, the job is to create a new empty file called "output.txt" of size 0 bytes and an empty directory called "docs". This should be done twice: once "here", i.e. in the current working directory and once in the filesystem root.
 
@@ -11544,7 +11545,7 @@ Output:
 
 ```
 
-# Empty string     :simple:string_manipulation:<a id="sec-182"></a>
+# Empty string<a id="sec-182"></a>
 
 Languages may have features for dealing specifically with empty strings (those containing no characters).
 
@@ -11562,7 +11563,7 @@ println!("is empty: {}", b.is_empty());
 println!("is not empty: {}", !b.is_empty());
 ```
 
-# Random numbers     :basic_language_learning:randomness:probability_and_statistics:<a id="sec-183"></a>
+# Random numbers<a id="sec-183"></a>
 
 Task
 
@@ -11885,7 +11886,7 @@ First Hashard bigger than 1_000 : 1002
 
 ```
 
-# Vector products     :geometry:wolfram_linked:<a id="sec-187"></a>
+# Vector products<a id="sec-187"></a>
 
 A vector is defined as having three dimensions as being represented by an ordered collection of three numbers:   (X, Y, Z).
 
@@ -11996,7 +11997,7 @@ a . (b x c) = 6
 a x (b x c) = Vector { x: -267, y: 204, z: -3 }
 ```
 
-# Address of a variable     :basic_data_operations:<a id="sec-188"></a>
+# Address of a variable<a id="sec-188"></a>
 
 Task
 
@@ -12112,7 +12113,7 @@ fn main() {
 }
 ```
 
-# Man or boy test     :wikipediasourced:classic_cs_problems_and_programs:recursion:<a id="sec-190"></a>
+# Man or boy test<a id="sec-190"></a>
 
 This page uses content from Wikipedia. The original article was at Man or boy test. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -12182,7 +12183,7 @@ pub fn main() {
 }
 ```
 
-# Strip whitespace from a string/Top and tail     :string_manipulation:<a id="sec-191"></a>
+# Strip whitespace from a string/Top and tail<a id="sec-191"></a>
 
 Task
 
@@ -12205,7 +12206,7 @@ fn main() {
 }
 ```
 
-# Check that file exists     :simple:file_system_operations:<a id="sec-192"></a>
+# Check that file exists<a id="sec-192"></a>
 
 Task
 
@@ -12241,7 +12242,7 @@ fn main() {
  
 ```
 
-# Hofstadter Q sequence     :memoization:<a id="sec-193"></a>
+# Hofstadter Q sequence<a id="sec-193"></a>
 
 Hofstadter Q sequence
 
@@ -12310,7 +12311,7 @@ Term is less than preceding term 49798 times
 
 ```
 
-# Letter frequency     :randomness:probability_and_statistics:<a id="sec-194"></a>
+# Letter frequency<a id="sec-194"></a>
 
 Task
 
@@ -12428,7 +12429,7 @@ Number of occurences per character
 
 ```
 
-# Input loop     :selection_short_circuit_console_program_basics:basic_language_learning:streams:simple:text_processing:<a id="sec-195"></a>
+# Input loop<a id="sec-195"></a>
 
 Task
 
@@ -12501,7 +12502,7 @@ Output:
 
 ```
 
-# 24 game     :puzzles:<a id="sec-197"></a>
+# 24 game<a id="sec-197"></a>
 
 The 24 Game tests one's mental arithmetic.
 
@@ -12638,7 +12639,7 @@ fn main() {
 }
 ```
 
-# Entropy     :mathematics:<a id="sec-198"></a>
+# Entropy<a id="sec-198"></a>
 
 Task
 
@@ -12713,7 +12714,7 @@ Entropy of 1223334444 is 1.8464394.
 
 ```
 
-# Call a foreign-language function     :programming_environment_operations:<a id="sec-199"></a>
+# Call a foreign-language function<a id="sec-199"></a>
 
 Task
 
@@ -12815,7 +12816,7 @@ fn main() {
 }
 ```
 
-# Hash from two arrays     :basic_language_learning:data_structures:<a id="sec-201"></a>
+# Hash from two arrays<a id="sec-201"></a>
 
 Task
 
@@ -12920,7 +12921,7 @@ Lucas:	2	1	3	4	7	11	18	29	47	76
  
 ```
 
-# Sorting algorithms/Merge sort     :recursion:sorting_algorithms:<a id="sec-203"></a>
+# Sorting algorithms/Merge sort<a id="sec-203"></a>
 
 The   merge sort   is a recursive sort of order   n\*log(n).
 
@@ -13163,7 +13164,7 @@ In 1 to 20000, 15120 has the most proper divisors at 79
 
 ```
 
-# Sort using a custom comparator     :sorting:<a id="sec-205"></a>
+# Sort using a custom comparator<a id="sec-205"></a>
 
 Task
 
@@ -13187,7 +13188,7 @@ fn main() {
  
 ```
 
-# N'th     :string_manipulation:<a id="sec-206"></a>
+# N'th<a id="sec-206"></a>
 
 Write a function/method/subroutine/&#x2026; that when given an integer greater than or equal to zero returns a string of the number followed by an apostrophe then the ordinal suffix. Example returns would include 1'st 2'nd 3'rd 11'th 111'th 1001'st 1012'th
 
@@ -13231,7 +13232,7 @@ Output:
 1000th, 1001st, 1002nd, 1003rd, 1004th, 1005th, 1006th, 1007th, 1008th, 1009th, 1010th, 1011th, 1012th, 1013th, 1014th, 1015th, 1016th, 1017th, 1018th, 1019th, 1020th, 1021st, 1022nd, 1023rd, 1024th, 1025th,
 ```
 
-# AKS test for primes     :prime_numbers:<a id="sec-207"></a>
+# AKS test for primes<a id="sec-207"></a>
 
 The AKS algorithm for testing whether a number is prime is a polynomial-time algorithm based on an elementary theorem about Pascal triangles.
 
@@ -13334,7 +13335,7 @@ fn aks_coefficients(k: usize) -> Vec<i64> {
  
 ```
 
-# Set     :data_structures:discrete_math:<a id="sec-208"></a>
+# Set<a id="sec-208"></a>
 
 A   set  is a collection of elements, without duplicates and without order.
 
@@ -13439,7 +13440,7 @@ abundant:        4953
 
 ```
 
-# Averages/Mode     :probability_and_statistics:<a id="sec-210"></a>
+# Averages/Mode<a id="sec-210"></a>
 
 Task[edit]
 
@@ -13596,7 +13597,7 @@ Output:
 
 ```
 
-# Count in octal     :basic_language_learning:iteration:radices:<a id="sec-212"></a>
+# Count in octal<a id="sec-212"></a>
 
 Task
 
@@ -13616,7 +13617,7 @@ fn main() {
 }
 ```
 
-# Guess the number     :games:randomness:<a id="sec-213"></a>
+# Guess the number<a id="sec-213"></a>
 
 Task
 
@@ -13855,7 +13856,7 @@ a, a, (1)
 
 ```
 
-# Here document     :syntax_elements:<a id="sec-215"></a>
+# Here document<a id="sec-215"></a>
 
 A   here document   (or "heredoc")   is a way of specifying a text block, preserving the line breaks, indentation and other whitespace within the text.
 
@@ -13879,7 +13880,7 @@ let x = r#"
   "#;
 ```
 
-# Arithmetic/Rational     :arithmetic_operations:arithmetic:<a id="sec-216"></a>
+# Arithmetic/Rational<a id="sec-216"></a>
 
 Task
 
@@ -14038,7 +14039,7 @@ fn main() {
  
 ```
 
-# Langton's ant     :cellular_automata:<a id="sec-217"></a>
+# Langton's ant<a id="sec-217"></a>
 
 Langton's ant is a cellular automaton that models an ant sitting on a plane of cells, all of which are white initially, the ant facing in one of four directions.
 
@@ -14304,7 +14305,7 @@ impl<'a> Amb<'a> {
  
 ```
 
-# String interpolation (included)     :string_manipulation:basic_language_learning:simple:basic_data_operations:<a id="sec-220"></a>
+# String interpolation (included)<a id="sec-220"></a>
 
 Given a string and defined variables or values, string interpolation is the replacement of defined character sequences in the string by values or variable values.
 
@@ -14393,7 +14394,7 @@ Output:
 133^5 + 110^5 + 84^5 + 27^5 == 144^5
 ```
 
-# Monte Carlo methods     :probability_and_statistics:<a id="sec-222"></a>
+# Monte Carlo methods<a id="sec-222"></a>
 
 A Monte Carlo Simulation is a way of approximating the value of a function where calculating the actual value is difficult or impossible. It uses random sampling to define constraints on the value and then makes a sort of "best guess."
 
@@ -14464,7 +14465,7 @@ Real pi: 3.141592653589793
 100000000: 3.14186092  dev: 0.00854%
 ```
 
-# Extend your language     :control_structures:<a id="sec-223"></a>
+# Extend your language<a id="sec-223"></a>
 
 Some programming languages allow you to extend the language. While this can be done to a certain degree in most languages (e.g. by using macros), other languages go much further. Most notably in the Forth and Lisp families, programming per se is done by extending the language without any formal distinction between built-in and user-defined elements.
 
@@ -14538,7 +14539,7 @@ fn main() {
 }
 ```
 
-# Shell one-liner     :programming_environment_operations:<a id="sec-224"></a>
+# Shell one-liner<a id="sec-224"></a>
 
 Task
 
@@ -14552,7 +14553,7 @@ The following code leaves the file rust<sub>out</sub> in the current directory (
 $ echo 'fn main(){println!("Hello!")}' | rustc -;./rust_out
 ```
 
-# String comparison     :basic_data_operations:basic_language_learning:simple:<a id="sec-225"></a>
+# String comparison<a id="sec-225"></a>
 
 The task is to demonstrate how to compare two strings from within the language and how to achieve a lexical comparison.
 
@@ -14610,7 +14611,7 @@ The first string is lexically after the second
 The first string is not lexically before the second
 ```
 
-# Walk a directory/Recursively     :file_system_operations:recursion:<a id="sec-226"></a>
+# Walk a directory/Recursively<a id="sec-226"></a>
 
 Task
 
@@ -14642,7 +14643,7 @@ fn main() {
 }
 ```
 
-# MD5     :checksums:<a id="sec-227"></a>
+# MD5<a id="sec-227"></a>
 
 Task
 
@@ -14680,7 +14681,7 @@ fn main() {
  
 ```
 
-# Modulinos     :basic_language_learning:<a id="sec-228"></a>
+# Modulinos<a id="sec-228"></a>
 
 It is useful to be able to execute a main() function only when a program is run directly. This is a central feature in programming scripts. A script that behaves this way is called a modulino.
 
@@ -14751,7 +14752,7 @@ $ ./test
 Test: The meaning of life is 42
 ```
 
-# Read a configuration file     :initialization:file_handling:<a id="sec-229"></a>
+# Read a configuration file<a id="sec-229"></a>
 
 The task is to read a configuration file in standard configuration file format, and set variables accordingly.
 
@@ -14891,7 +14892,7 @@ Config { full_name: Some("Foo Barber"), favourite_fruit: Some("banana"), needs_p
 
 ```
 
-# Binary strings     :string_manipulation:<a id="sec-230"></a>
+# Binary strings<a id="sec-230"></a>
 
 Many languages have powerful and useful (binary safe) string manipulation functions, while others don't, making it harder for these languages to accomplish some tasks. This task is about creating functions to handle binary strings (strings made of arbitrary bytes, i.e. byte strings according to Wikipedia) for those languages that don't have built-in support for them. If your language of choice does have this built-in support, show a possible alternative implementation for the functions or abilities already provided by the language. In particular the functions you need to create are:
 
@@ -15079,7 +15080,7 @@ Output:
 85744333
 ```
 
-# Lucas-Lehmer test     :arbitrary_precision:prime_numbers:arithmetic_operations:<a id="sec-232"></a>
+# Lucas-Lehmer test<a id="sec-232"></a>
 
 Lucas-Lehmer Test: for {\displaystyle p} an odd prime, the Mersenne number {\displaystyle 2<sup>p</sup>-1} is prime if and only if {\displaystyle 2<sup>p</sup>-1} divides {\displaystyle S(p-1)} where {\displaystyle S(n+1)=(S(n))<sup>2</sup>-2} , and {\displaystyle S(1)=4} .
 
@@ -15281,7 +15282,7 @@ Output:
 
 ```
 
-# File size     :file_system_operations:<a id="sec-235"></a>
+# File size<a id="sec-235"></a>
 
 Verify the size of a file called     input.txt     for a file in the current working directory, and another one in the file system root.
 
@@ -15454,7 +15455,7 @@ test exhaustiveness_check ... ok
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured
 ```
 
-# Guess the number/With feedback     :games:<a id="sec-238"></a>
+# Guess the number/With feedback<a id="sec-238"></a>
 
 Task
 
@@ -15524,7 +15525,7 @@ too low!
 you got it in 6 tries!
 ```
 
-# Sorting algorithms/Selection sort     :sorting_algorithms:<a id="sec-239"></a>
+# Sorting algorithms/Selection sort<a id="sec-239"></a>
 
 Task
 
@@ -15578,7 +15579,7 @@ fn main() {
  
 ```
 
-# Playing cards     :games:cards:<a id="sec-240"></a>
+# Playing cards<a id="sec-240"></a>
 
 Task
 
@@ -15670,7 +15671,7 @@ Six of Clubs
 Five of Clubs
 ```
 
-# Delete a file     :file_system_operations:<a id="sec-241"></a>
+# Delete a file<a id="sec-241"></a>
 
 Task
 
@@ -15706,7 +15707,7 @@ fn error_handler<E: fmt::Display>(error: E, code: i32) -> ! {
 }
 ```
 
-# Quaternion type     :geometry:<a id="sec-242"></a>
+# Quaternion type<a id="sec-242"></a>
 
 Quaternions   are an extension of the idea of   complex numbers.
 
@@ -15966,7 +15967,7 @@ normal of q0 = 5.477225575051661
 
 ```
 
-# Random number generator (included)     :randomness:<a id="sec-243"></a>
+# Random number generator (included)<a id="sec-243"></a>
 
 The task is to:
 
@@ -15982,7 +15983,7 @@ Rust's rand crate offers several PRNGs. (It is also available via #\![feature(ru
 
 For any other PRNGs not provided, they merely have to implement the Rng trait.
 
-# String append     :simple:basic_language_learning:string_manipulation:basic_data_operations:<a id="sec-244"></a>
+# String append<a id="sec-244"></a>
 
 Most languages provide a way to concatenate two string values, but some languages also provide a convenient way to append in-place to an existing string variable without referring to the variable twice.
 
@@ -16008,7 +16009,7 @@ Output:
 
 Hello world!!!!
 
-# 24 game/Solve     :puzzles:<a id="sec-245"></a>
+# 24 game/Solve<a id="sec-245"></a>
 
 task
 
@@ -16203,7 +16204,7 @@ solutions for 5, 5, 9, 8
 
 ```
 
-# Averages/Mean angle     :geometry:<a id="sec-246"></a>
+# Averages/Mean angle<a id="sec-246"></a>
 
 When calculating the average or mean of an angle one has to take into account how angles wrap around so that any angle in degrees plus any integer multiple of 360 degrees is a measure of the same angle.
 
@@ -16297,7 +16298,7 @@ fn calculate() {
  
 ```
 
-# Linear congruential generator     :randomness:<a id="sec-247"></a>
+# Linear congruential generator<a id="sec-247"></a>
 
 The linear congruential generator is a very simple example of a random number generator. All linear congruential generators use this formula:
 
@@ -16399,7 +16400,7 @@ fn main() {
 }
 ```
 
-# String prepend     :basic_language_learning:simple:string_manipulation:basic_data_operations:<a id="sec-248"></a>
+# String prepend<a id="sec-248"></a>
 
 Task
 
@@ -16419,7 +16420,7 @@ println!("{}", s);
  
 ```
 
-# Numerical integration     :arithmetic_operations:arithmetic:mathematics:<a id="sec-249"></a>
+# Numerical integration<a id="sec-249"></a>
 
 Write functions to calculate the definite integral of a function ƒ(x) using all five of the following methods:
 
@@ -16479,7 +16480,7 @@ Output:
 18000000.001390498
 ```
 
-# Cholesky decomposition     :matrices:<a id="sec-250"></a>
+# Cholesky decomposition<a id="sec-250"></a>
 
 Every symmetric, positive definite matrix A can be decomposed into a product of a unique lower triangular matrix L and its transpose:
 
@@ -16719,7 +16720,7 @@ checked: Return the result or 'None' on overflow saturating: Return the result o
  
 ```
 
-# Sequence of non-squares     :arithmetic_operations:<a id="sec-252"></a>
+# Sequence of non-squares<a id="sec-252"></a>
 
 Task
 
@@ -16755,7 +16756,7 @@ fn main() {
  
 ```
 
-# Singly-linked list/Element definition     :data_structures:<a id="sec-253"></a>
+# Singly-linked list/Element definition<a id="sec-253"></a>
 
 singly-linked list
 
@@ -16892,7 +16893,7 @@ sys	0m0.003s
 
 ```
 
-# Vigenère cipher     :string_manipulation:encryption:<a id="sec-255"></a>
+# Vigenère cipher<a id="sec-255"></a>
 
 Task
 
@@ -17087,7 +17088,7 @@ fn asc_strings(seq: &[&str]) -> bool {
 }
 ```
 
-# CRC-32     :checksums:<a id="sec-258"></a>
+# CRC-32<a id="sec-258"></a>
 
 Task
 
@@ -17141,7 +17142,7 @@ Output:
 
 ```
 
-# Currying     :functions_and_subroutines:wikipediasourced:<a id="sec-259"></a>
+# Currying<a id="sec-259"></a>
 
 This page uses content from Wikipedia. The original article was at Currying. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -17164,7 +17165,7 @@ fn main() {
 }
 ```
 
-# Pick random element     :randomness:basic_language_learning:<a id="sec-260"></a>
+# Pick random element<a id="sec-260"></a>
 
 Demonstrate how to pick a random element from a list.
 
@@ -17183,7 +17184,7 @@ fn main() {
 }
 ```
 
-# Extreme floating point values     :irrational_numbers:<a id="sec-261"></a>
+# Extreme floating point values<a id="sec-261"></a>
 
 The IEEE floating point specification defines certain 'extreme' floating point values such as minus zero, -0.0, a value distinct from plus zero; not a number, NaN; and plus and minus infinity.
 
@@ -17249,7 +17250,7 @@ NaN == NaN = false
 
 ```
 
-# Self-describing numbers     :clarified_and_needing_review:<a id="sec-262"></a>
+# Self-describing numbers<a id="sec-262"></a>
 
 There are several so-called "self-describing" or "self-descriptive" integers.
 
@@ -17296,7 +17297,7 @@ fn main() {
  
 ```
 
-# Convert seconds to compound duration     :date_and_time:<a id="sec-263"></a>
+# Convert seconds to compound duration<a id="sec-263"></a>
 
 Task
 
@@ -17365,7 +17366,7 @@ fn main() {
 }
 ```
 
-# Huffman coding     :compression:<a id="sec-264"></a>
+# Huffman coding<a id="sec-264"></a>
 
 Huffman encoding is a way to assign binary codes to symbols that reduces the overall number of bits used to encode a typical string of those symbols.
 
@@ -17509,7 +17510,7 @@ x: 10000
 
 ```
 
-# Knight's tour     :puzzles:<a id="sec-265"></a>
+# Knight's tour<a id="sec-265"></a>
 
 Task
 
@@ -17650,7 +17651,7 @@ Starting position: (3, 1)
 
 ```
 
-# Sorting algorithms/Heapsort     :sorting_algorithms:wikipediasourced:<a id="sec-266"></a>
+# Sorting algorithms/Heapsort<a id="sec-266"></a>
 
 This page uses content from Wikipedia. The original article was at Heapsort. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -17778,7 +17779,7 @@ fn main() {
 }
 ```
 
-# Concurrent computing     :concurrency:basic_language_learning:<a id="sec-267"></a>
+# Concurrent computing<a id="sec-267"></a>
 
 Task
 
@@ -17809,7 +17810,7 @@ fn main() {
 }
 ```
 
-# Walk a directory/Non-recursively     :file_system_operations:<a id="sec-268"></a>
+# Walk a directory/Non-recursively<a id="sec-268"></a>
 
 Task
 
@@ -18101,7 +18102,7 @@ Output:
 
 ```
 
-# Enforced immutability     :initialization:<a id="sec-272"></a>
+# Enforced immutability<a id="sec-272"></a>
 
 Task
 
@@ -18133,7 +18134,7 @@ let mut z = 5;
 let y = &mut z; // Raises compiler error because y is already assigned to '&mut x'
 ```
 
-# Rename a file     :file_system_operations:<a id="sec-273"></a>
+# Rename a file<a id="sec-273"></a>
 
 Task
 
@@ -18428,7 +18429,7 @@ y(10):	675.9999490167		 5.098329029351589E-5
 
 ```
 
-# Unicode variable names     :unicode:<a id="sec-278"></a>
+# Unicode variable names<a id="sec-278"></a>
 
 Describe, and give a pointer to documentation on your languages use of characters beyond those of the ASCII character set in the naming of variables. Show how to:
 
@@ -18453,7 +18454,7 @@ fn main() {
 }
 ```
 
-# Probabilistic choice     :probability_and_statistics:<a id="sec-279"></a>
+# Probabilistic choice<a id="sec-279"></a>
 
 Given a mapping between items and their required probability of occurrence, generate a million items randomly subject to the given probabilities and compare the target probability of occurrence versus the generated values.
 
@@ -18632,7 +18633,7 @@ zayin  | 0.090909 | 0.090513
 heth   | 0.063456 | 0.063843
 ```
 
-# Brownian tree     :geometry:raster_graphics_operations:wikipediasourced:fractals:<a id="sec-280"></a>
+# Brownian tree<a id="sec-280"></a>
 
 This page uses content from Wikipedia. The original article was at Brownian<sub>tree</sub>. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -18767,7 +18768,7 @@ For a 512 x 512 field and 65k motes, run time is 25 s on ~2011 hardware (Phenom 
 
 ![img](Rust-Brownian-512-20k.png)
 
-# Literals/Floating point     :basic_language_learning:<a id="sec-281"></a>
+# Literals/Floating point<a id="sec-281"></a>
 
 Programming languages have different ways of expressing floating-point literals.
 
@@ -18841,7 +18842,7 @@ Output:
 1 2 5 14 42 132 429 1430 4862 16796 58786 208012 742900 2674440 9694845 
 ```
 
-# Sorting algorithms/Bogosort     :sorting_algorithms:<a id="sec-283"></a>
+# Sorting algorithms/Bogosort<a id="sec-283"></a>
 
 Task
 
@@ -18901,7 +18902,7 @@ fn main() {
  
 ```
 
-# Bulls and cows     :puzzles:games:<a id="sec-284"></a>
+# Bulls and cows<a id="sec-284"></a>
 
 Bulls and Cows
 
@@ -19008,7 +19009,7 @@ fn main() {
 }
 ```
 
-# Sorting algorithms/Counting sort     :sorting_algorithms:wikipediasourced:<a id="sec-285"></a>
+# Sorting algorithms/Counting sort<a id="sec-285"></a>
 
 This page uses content from Wikipedia. The original article was at Counting sort. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -19086,7 +19087,7 @@ Output:
 
 ```
 
-# Bernoulli numbers     :mathematics:<a id="sec-286"></a>
+# Bernoulli numbers<a id="sec-286"></a>
 
 Bernoulli numbers are used in some series expansions of several functions   (trigonometric, hyperbolic, gamma, etc.),   and are extremely important in number theory and analysis.
 
@@ -19335,7 +19336,7 @@ fn main() {
 
 If we compile this with rustc factorial.rs -O &#x2013;emit asm and inspect the outputted assembly, we can see movq $3628800, (%rsp). This means the result of 3628800 was calculated in compile-time rather than run-time.
 
-# Benford's law     :wikipediasourced:wolfram_linked:<a id="sec-288"></a>
+# Benford's law<a id="sec-288"></a>
 
 This page uses content from Wikipedia. The original article was at Benford's<sub>law</sub>. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -19703,7 +19704,7 @@ Output:
 [  *  --- --- --- --- ---  *  --- ---]
 ```
 
-# Semiprime     :prime_numbers:<a id="sec-291"></a>
+# Semiprime<a id="sec-291"></a>
 
 Semiprime numbers are natural numbers that are products of exactly two (possibly equal) prime numbers.
 
@@ -19802,7 +19803,7 @@ test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 
 ```
 
-# IBAN     :checksums:wikipediasourced:<a id="sec-292"></a>
+# IBAN<a id="sec-292"></a>
 
 This page uses content from Wikipedia. The original article was at IBAN. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -19890,7 +19891,7 @@ fn validate_iban(iban: &str) -> bool {
  
 ```
 
-# Singly-linked list/Traversal     :data_structures:iteration:<a id="sec-293"></a>
+# Singly-linked list/Traversal<a id="sec-293"></a>
 
 Traverse from the beginning of a singly-linked list to the end.
 
@@ -20075,7 +20076,7 @@ fn main() {
 }
 ```
 
-# Call an object method     :object_oriented:basic_language_learning:<a id="sec-295"></a>
+# Call an object method<a id="sec-295"></a>
 
 In object-oriented programming a method is a function associated with a particular class or object. In most forms of object oriented implementations methods can be static, associated with the class itself; or instance, associated with an instance of a class.
 
@@ -20196,7 +20197,7 @@ test test::sub_assign ... ok
 test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured
 ```
 
-# Forest fire     :wikipediasourced:games:cellular_automata:<a id="sec-297"></a>
+# Forest fire<a id="sec-297"></a>
 
 This page uses content from Wikipedia. The original article was at Forest-fire model. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -20386,7 +20387,7 @@ fn clear_screen(writer: &mut BufWriter<Stdout>) {
  
 ```
 
-# Constrained random points on a circle     :probability_and_statistics:<a id="sec-298"></a>
+# Constrained random points on a circle<a id="sec-298"></a>
 
 Task
 
@@ -20478,7 +20479,7 @@ fn main() {
 }
 ```
 
-# Department Numbers     :puzzles:<a id="sec-299"></a>
+# Department Numbers<a id="sec-299"></a>
 
 There is a highly organized city that has decided to assign a number to each of their departments:
 
@@ -20523,7 +20524,7 @@ fn main()
  
 ```
 
-# Read a specific line from a file     :file_handling:<a id="sec-300"></a>
+# Read a specific line from a file<a id="sec-300"></a>
 
 Some languages have special semantics for obtaining a known line number from a file.
 
@@ -20657,7 +20658,7 @@ fn main() {
 }
 ```
 
-# Two Sum     :arithmetic_operations:clarified_and_needing_review:<a id="sec-302"></a>
+# Two Sum<a id="sec-302"></a>
 
 Task
 
@@ -20712,7 +20713,7 @@ Some((1, 3))
 
 ```
 
-# Execute Brain\*\*\*\*     :compilers_and_interpreters:brainf_implementations:implementations:<a id="sec-303"></a>
+# Execute Brain\*\*\*\*<a id="sec-303"></a>
 
 RCBF is a set of Brainf\*\*\* compilers and interpreters written for Rosetta Code in a variety of languages.
 
@@ -20831,7 +20832,7 @@ fn main() {
 }
 ```
 
-# Statistics/Basic     :mathematics:<a id="sec-304"></a>
+# Statistics/Basic<a id="sec-304"></a>
 
 Statistics is all about large groups of numbers. When talking about a set of sampled data, most frequently used is their mean value and standard deviation (stddev). If you have set of data {\displaystyle x<sub>i</sub>} where {\displaystyle i=1,2,\ldots ,n\\,\\!} , the mean is {\displaystyle {\bar {x}}&equiv; {1 \over n}&sum; \_{i}x<sub>i</sub>} , while the stddev is {\displaystyle &sigma; &equiv; {\sqrt {{1 \over n}&sum; \_{i}\left(x<sub>i</sub>-{\bar {x}}\right)<sup>2</sup>}}} .
 
@@ -20999,7 +21000,7 @@ Standard deviation: Some(0.2885439)
 0.9: ***************************************
 ```
 
-# Remove lines from a file     :file_handling:<a id="sec-305"></a>
+# Remove lines from a file<a id="sec-305"></a>
 
 Task
 
@@ -21050,7 +21051,7 @@ fn main() {
 }
 ```
 
-# Left factorials     :mathematics:<a id="sec-306"></a>
+# Left factorials<a id="sec-306"></a>
 
 Left factorials,   !n,   may refer to either   subfactorials   or to   factorial sums; the same notation can be confusingly seen used for the two different definitions.
 
@@ -21251,7 +21252,7 @@ Output:
 
 ```
 
-# Rock-paper-scissors     :games:<a id="sec-307"></a>
+# Rock-paper-scissors<a id="sec-307"></a>
 
 Task
 
@@ -21361,7 +21362,7 @@ fn main() {
 }
 ```
 
-# Circles of given radius through two points     :geometry:<a id="sec-308"></a>
+# Circles of given radius through two points<a id="sec-308"></a>
 
 Given two points on a plane and a radius, usually two circles of given radius can be drawn through the points.
 
@@ -21474,7 +21475,7 @@ Points: ((0.1234, 0.9876), (0.1234, 0.9876)), Radius: 0.0000
 No circles can be drawn through (0.1234, 0.9876)
 ```
 
-# Call a function in a shared library     :programming_environment_operations:functions_and_subroutines:<a id="sec-309"></a>
+# Call a function in a shared library<a id="sec-309"></a>
 
 Show how to call a function in a shared library (without dynamically linking to it at compile-time). In particular, show how to call the shared library function if the library is available, otherwise use an internal equivalent function.
 
@@ -21529,7 +21530,7 @@ fn builtin_cos(x: c_double) -> c_double {
 }
 ```
 
-# First-class functions/Use numbers analogously     :functions_and_subroutines:<a id="sec-310"></a>
+# First-class functions/Use numbers analogously<a id="sec-310"></a>
 
 In First-class functions, a language is showing how its manipulation of functions is similar to its manipulation of other types.
 
@@ -21585,7 +21586,7 @@ fn multiplier(x: f64, y: f64) -> impl Fn(f64) -> f64 {
 
 This is very similar to the first-class functions implementation save that the type inference works a little bit better here (e.g. when declaring numlist and invlist) and multiplier's declaration is substantially simpler than compose's. Both of these boil down to the fact that closures and regular functions are actually different types in Rust so we have to be generic over them but here we are only dealing with 64-bit floats.
 
-# Split a character string based on change of character     :string_manipulation:simple:<a id="sec-311"></a>
+# Split a character string based on change of character<a id="sec-311"></a>
 
 Task
 
@@ -21658,7 +21659,7 @@ output string: g, HHH, 5, YY, ++, ///, \
 
 ```
 
-# Guess the number/With feedback (player)     :games:<a id="sec-312"></a>
+# Guess the number/With feedback (player)<a id="sec-312"></a>
 
 Task:
 
@@ -21718,7 +21719,7 @@ fn main() {
 }
 ```
 
-# Menu     :text_processing:<a id="sec-313"></a>
+# Menu<a id="sec-313"></a>
 
 Task
 
@@ -21837,7 +21838,7 @@ Munchausen numbers below 5_000 : [1, 3435]
 
 ```
 
-# Sort stability     :sorting:<a id="sec-315"></a>
+# Sort stability<a id="sec-315"></a>
 
 When sorting records in a table by a particular column or field, a stable sort will always retain the relative order of records that have the same key.
 
@@ -21909,7 +21910,7 @@ US New York
 US Birmingham
 ```
 
-# Sorting algorithms/Pancake sort     :sorting_algorithms:<a id="sec-316"></a>
+# Sorting algorithms/Pancake sort<a id="sec-316"></a>
 
 Task
 
@@ -22043,7 +22044,7 @@ Output:
 
 ```
 
-# SHA-256     :checksums:<a id="sec-318"></a>
+# SHA-256<a id="sec-318"></a>
 
 SHA-256 is the recommended stronger alternative to SHA-1. See FIPS PUB 180-4 for implementation details.
 
@@ -22064,7 +22065,7 @@ fn sha_256(input: &str) -> String {
 }
 ```
 
-# Fractal tree     :raster_graphics_operations:recursion:fractals:geometry:<a id="sec-319"></a>
+# Fractal tree<a id="sec-319"></a>
 
 Generate and draw a fractal tree.
 
@@ -22137,7 +22138,7 @@ fn draw_fractal_tree(x1: f64, y1: f64, angle: f64, depth: u32, c: Context, g: &m
  
 ```
 
-# Singly-linked list/Element insertion     :data_structures:<a id="sec-320"></a>
+# Singly-linked list/Element insertion<a id="sec-320"></a>
 
 Singly-Linked List (element)
 
@@ -22266,7 +22267,7 @@ fn main() {
 }
 ```
 
-# General FizzBuzz     :iteration:classic_cs_problems_and_programs:recursion:<a id="sec-322"></a>
+# General FizzBuzz<a id="sec-322"></a>
 
 Task
 
@@ -22364,7 +22365,7 @@ fn main() {
 }
 ```
 
-# Sorting algorithms/Sleep sort     :sorting_algorithms:<a id="sec-323"></a>
+# Sorting algorithms/Sleep sort<a id="sec-323"></a>
 
 In general, sleep sort works by starting a separate task for each item to be sorted, where each task sleeps for an interval corresponding to the item's sort key, then emits the item. Items are then collected sequentially in time.
 
@@ -22400,7 +22401,7 @@ $ ./sleepsort 50 34 43 3 2
 
 ```
 
-# Keyboard input/Obtain a Y or N response     :simple:keyboard_input:<a id="sec-324"></a>
+# Keyboard input/Obtain a Y or N response<a id="sec-324"></a>
 
 Task
 
@@ -22436,7 +22437,7 @@ fn main() {
 }
 ```
 
-# Sorting algorithms/Stooge sort     :wikipediasourced:sorting_algorithms:<a id="sec-325"></a>
+# Sorting algorithms/Stooge sort<a id="sec-325"></a>
 
 This page uses content from Wikipedia. The original article was at Stooge sort. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -22606,7 +22607,7 @@ N          Length     Entropy    Word
 
 ```
 
-# Hello world/Web server     :networking_and_web_interaction:web:<a id="sec-327"></a>
+# Hello world/Web server<a id="sec-327"></a>
 
 The browser is the new GUI !
 
@@ -22707,7 +22708,7 @@ fn main() {
 }
 ```
 
-# Population count     :mathematics:<a id="sec-329"></a>
+# Population count<a id="sec-329"></a>
 
 The population count   is the number of   1s   (ones)   in the binary representation of a non-negative integer.
 
@@ -22824,7 +22825,7 @@ fn main() {
 }
 ```
 
-# Substring     :ocaml:python:basic_language_learning:lfe:objeck:prolog:octave:perl_6:mathematica:picolisp:sql_pl:scala:stata:vala:lasso:livecode:maxima:nim:seed7:lingo:rpg:netrexx:zkl:labview:powershell:rust:kotlin:maple:phix:oforth:r:lang5:lua:scheme:sed:mumps:vbscript:yorick:newlisp:ruby:tcl:wart:julia:matlab:niue:slate:purebasic:unix_shell:logtalk:sas:run_basic:smalltalk:string_manipulation:logo:m2000_interpreter:pl_i:racket:basic_data_operations:oz:pascal:sidef:simple:liberty_basic:nemerle:pari_gp:raven:rebol:tuscript:snobol4:swift:php:ring:perl:rexx:sather:<a id="sec-331"></a>
+# Substring<a id="sec-331"></a>
 
 In this task display a substring:
 
@@ -22836,7 +22837,7 @@ The program must reference logical characters (code points), not 8-bit code unit
 
 Programs for other encodings (such as 8-bit ASCII, or EUC-JP) are not required to handle all Unicode characters.
 
-# Synchronous concurrency     :concurrency:clarify_task:<a id="sec-332"></a>
+# Synchronous concurrency<a id="sec-332"></a>
 
 The goal of this task is to create two concurrent activities ("Threads" or "Tasks", not processes.) that share data synchronously. Your language may provide syntax or libraries to perform concurrency. Different languages provide different implementations of concurrency, often with different names. Some languages use the term threads, others use the term tasks, while others use co-processes. This task should not be implemented using fork, spawn, or the Linux/UNIX/Win32 pipe command, as communication should be between threads, not processes.
 
@@ -22893,7 +22894,7 @@ fn main() {
 }
 ```
 
-# Primorial numbers     :prime_numbers:<a id="sec-333"></a>
+# Primorial numbers<a id="sec-333"></a>
 
 Primorial numbers are those formed by multiplying successive prime numbers.
 
@@ -23003,7 +23004,7 @@ sys	0m0.054s
 
 ```
 
-# 4-rings or 4-squares puzzle     :games:puzzles:<a id="sec-334"></a>
+# 4-rings or 4-squares puzzle<a id="sec-334"></a>
 
 Task
 
@@ -23156,7 +23157,7 @@ Output:
 
 ```
 
-# Unbias a random generator     :randomness:<a id="sec-335"></a>
+# Unbias a random generator<a id="sec-335"></a>
 
 {\displaystyle P<sub>1</sub>}
 
@@ -23231,7 +23232,7 @@ bias 6:  16.66%   49.95%
 
 ```
 
-# Dijkstra's algorithm     :clarified_and_needing_review:routing_algorithms:<a id="sec-336"></a>
+# Dijkstra's algorithm<a id="sec-336"></a>
 
 Dijkstra's algorithm, conceived by Dutch computer scientist Edsger Dijkstra in 1956 and published in 1959, is a graph search algorithm that solves the single-source shortest path problem for a graph with nonnegative edge path costs, producing a shortest path tree. This algorithm is often used in routing and as a subroutine in other graph algorithms.
 
@@ -23404,7 +23405,7 @@ a -> c -> f -> e
 
 ```
 
-# Dining philosophers     :concurrency:classic_cs_problems_and_programs:puzzles:<a id="sec-337"></a>
+# Dining philosophers<a id="sec-337"></a>
 
 The dining philosophers problem illustrates non-composability of low-level synchronization primitives like semaphores. It is a modification of a problem posed by Edsger Dijkstra.
 
@@ -23482,7 +23483,7 @@ fn main() {
 }
 ```
 
-# Convert decimal number to rational     :clarify_task:<a id="sec-338"></a>
+# Convert decimal number to rational<a id="sec-338"></a>
 
 The task is to write a program to transform a decimal number into a fraction in lowest terms.
 
@@ -23726,7 +23727,7 @@ Output:
 
 ```
 
-# Animation     :gui:animation:temporal_media:<a id="sec-341"></a>
+# Animation<a id="sec-341"></a>
 
 Animation is integral to many parts of GUIs, including both the fancy effects when things change used in window managers, and of course games.   The core of any animation system is a scheme for periodically changing the display while still remaining responsive to the user.   This task demonstrates this.
 
@@ -23803,7 +23804,7 @@ fn main() {
 fn main() {}
 ```
 
-# Deal cards for FreeCell     :games:cards:<a id="sec-342"></a>
+# Deal cards for FreeCell<a id="sec-342"></a>
 
 Free Cell is the solitaire card game that Paul Alfille introduced to the PLATO system in 1978. Jim Horne, at Microsoft, changed the name to FreeCell and reimplemented the game for DOS, then Windows. This version introduced 32000 numbered deals. (The FreeCell FAQ tells this history.)
 
@@ -24076,7 +24077,7 @@ fn run(input: String) -> Result<Number, String> {
 }
 ```
 
-# Random number generator (device)     :randomness:input_output:<a id="sec-344"></a>
+# Random number generator (device)<a id="sec-344"></a>
 
 Task
 
@@ -24171,7 +24172,7 @@ document.txt_backup                |          | Some("txt_backup")
 
 ```
 
-# Draw a clock     :date_and_time:<a id="sec-346"></a>
+# Draw a clock<a id="sec-346"></a>
 
 Task
 
@@ -24217,7 +24218,7 @@ fn clear_screen() {
 }
 ```
 
-# Lychrel numbers     :palindromes:<a id="sec-347"></a>
+# Lychrel numbers<a id="sec-347"></a>
 
 Take an integer n, greater than zero. Form the next n of its series by reversing the digits of the current n and adding the result to the current n. Stop when n becomes palindromic - i.e. the digits of n in reverse order == n.
 
@@ -24549,7 +24550,7 @@ frequency of 9: 30003
 
 ```
 
-# Constrained genericity     :type_system:object_oriented:<a id="sec-350"></a>
+# Constrained genericity<a id="sec-350"></a>
 
 Constrained genericity or bounded quantification means that a parametrized type or function (see parametric polymorphism) can only be instantiated on types fulfilling some conditions, even if those conditions are not used in that function.
 
@@ -24609,7 +24610,7 @@ fn main() {
  
 ```
 
-# DNS query     :internet_protocol_multiprotocol_:networking_and_web_interaction:<a id="sec-351"></a>
+# DNS query<a id="sec-351"></a>
 
 DNS is an internet service that maps domain names, like rosettacode.org, to IP addresses, like 66.220.0.231.
 
@@ -24896,7 +24897,7 @@ Rosetta_Example_1: THERECANBENOSPACE
 Rosetta_Example_2: THERECANBESEVERALLINESBUTTHEYALLMUSTBECONCATENATED
 ```
 
-# 15 Puzzle Game     :games:puzzles:<a id="sec-356"></a>
+# 15 Puzzle Game<a id="sec-356"></a>
 
 Task
 
@@ -25117,7 +25118,7 @@ fn ask_action(moves: &HashMap<Direction, Cell>) -> Action {
 }
 ```
 
-# Take notes on the command line     :text_processing:selection_short_circuit_console_program_basics:programming_environment_operations:basic_language_learning:<a id="sec-357"></a>
+# Take notes on the command line<a id="sec-357"></a>
 
 Invoking NOTES without commandline arguments displays the current contents of the local NOTES.TXT if it exists. If NOTES has arguments, the current date and time are appended to the local NOTES.TXT followed by a newline. Then all the arguments, joined with spaces, prepended with a tab, and appended with a trailing newline, are written to NOTES.TXT. If NOTES.TXT doesn't already exist in the current directory then a new NOTES.TXT file should be created.
 
@@ -25170,7 +25171,7 @@ fn main() {
 }
 ```
 
-# Element-wise operations     :mathematics:matrices:<a id="sec-358"></a>
+# Element-wise operations<a id="sec-358"></a>
 
 This task is similar to:
 
@@ -25635,7 +25636,7 @@ fn main() {
 
 Output:
 
-# Discordian date     :date_and_time:<a id="sec-362"></a>
+# Discordian date<a id="sec-362"></a>
 
 Task
 
@@ -25861,7 +25862,7 @@ Output:
 
 ```
 
-# Ray-casting algorithm     :classic_cs_problems_and_programs:wikipediasourced:geometry:<a id="sec-364"></a>
+# Ray-casting algorithm<a id="sec-364"></a>
 
 This page uses content from Wikipedia. The original article was at Point<sub>in</sub><sub>polygon</sub>. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -26083,7 +26084,7 @@ Hexagon : true true false false true true false
 
 ```
 
-# Sockets     :networking_and_web_interaction:<a id="sec-365"></a>
+# Sockets<a id="sec-365"></a>
 
 For this exercise a program is open a socket to localhost on port 256 and send the message "hello socket world" before closing the socket.
 
@@ -26132,7 +26133,7 @@ fn jort_sort<T: Ord + Eq + Clone>(array: Vec<T>) -> bool {
 }
 ```
 
-# Atomic updates     :concurrency:<a id="sec-367"></a>
+# Atomic updates<a id="sec-367"></a>
 
 Task
 
@@ -26250,7 +26251,7 @@ fn main() {
 }
 ```
 
-# Rosetta Code/Count examples     :rosetta_code_related:<a id="sec-369"></a>
+# Rosetta Code/Count examples<a id="sec-369"></a>
 
 task
 
@@ -26399,7 +26400,7 @@ fn main() {
 }
 ```
 
-# Parametric polymorphism     :basic_language_learning:type_system:<a id="sec-370"></a>
+# Parametric polymorphism<a id="sec-370"></a>
 
 Parametric Polymorphism
 
@@ -26462,7 +26463,7 @@ fn main() {
 }
 ```
 
-# Munching squares     :raster_graphics_operations:graphics_algorithms:<a id="sec-371"></a>
+# Munching squares<a id="sec-371"></a>
 
 Render a graphical pattern where each pixel is colored by the value of 'x xor y' from an arbitrary color table.
 
@@ -26485,7 +26486,7 @@ fn main() {
 }
 ```
 
-# File extension is in extensions list     :string_manipulation:file_system_operations:<a id="sec-372"></a>
+# File extension is in extensions list<a id="sec-372"></a>
 
 Filename extensions
 
@@ -26814,7 +26815,7 @@ fn main() {
 }
 ```
 
-# Mouse position     :gui:hardware:pointing_devices:testing:<a id="sec-376"></a>
+# Mouse position<a id="sec-376"></a>
 
 Get the current location of the mouse cursor relative to the active window. Please specify if the window may be externally created.
 
@@ -27023,7 +27024,7 @@ N    average    analytical    (error)
 
 ```
 
-# CUSIP     :wikipediasourced:checksums:<a id="sec-378"></a>
+# CUSIP<a id="sec-378"></a>
 
 This page uses content from Wikipedia. The original article was at CUSIP. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -27128,7 +27129,7 @@ Output:
 
 ```
 
-# Determine if only one instance is running     :programming_environment_operations:concurrency:<a id="sec-379"></a>
+# Determine if only one instance is running<a id="sec-379"></a>
 
 This task is to determine if there is only one instance of an application running. If the program discovers that an instance of it is already running, then it should display a message indicating that it is already running and exit.
 
@@ -27268,7 +27269,7 @@ Output:
 
 ```
 
-# Vector     :geometry:<a id="sec-381"></a>
+# Vector<a id="sec-381"></a>
 
 Task
 
@@ -27500,7 +27501,7 @@ DIXON/DICKSONX = 0.7666666666666666
 JELLYFISH/SMELLYFISH = 0.8962962962962964
 ```
 
-# Bitmap/Write a PPM file     :input_output:<a id="sec-383"></a>
+# Bitmap/Write a PPM file<a id="sec-383"></a>
 
 Using the data storage type defined on this page for raster images, write the image to a PPM file (binary P6 prefered). (Read the definition of PPM file on Wikipedia.)
 
@@ -27576,7 +27577,7 @@ impl PPM {
 }
 ```
 
-# 2048     :puzzles:games:<a id="sec-384"></a>
+# 2048<a id="sec-384"></a>
 
 Task
 
@@ -27827,7 +27828,7 @@ fn main() {
  
 ```
 
-# Doubly-linked list/Element definition     :data_structures:<a id="sec-385"></a>
+# Doubly-linked list/Element definition<a id="sec-385"></a>
 
 Task
 
@@ -27955,7 +27956,7 @@ Output:
 580 divided by 34 is 17 remainder 2
 ```
 
-# Conjugate transpose     :matrices:<a id="sec-387"></a>
+# Conjugate transpose<a id="sec-387"></a>
 
 Suppose that a matrix {\displaystyle M} contains complex numbers. Then the conjugate transpose of {\displaystyle M} is a matrix {\displaystyle M<sup>H</sup>} containing the complex conjugates of the matrix transposition of {\displaystyle M} .
 
@@ -28089,7 +28090,7 @@ Unitary?: TRUE
 
 ```
 
-# Voronoi diagram     :geometry:<a id="sec-388"></a>
+# Voronoi diagram<a id="sec-388"></a>
 
 A Voronoi diagram is a diagram consisting of a number of sites. Each Voronoi site s also has a Voronoi cell consisting of all points closest to s.
 
@@ -28377,7 +28378,7 @@ fn main() {
 }
 ```
 
-# Doubly-linked list/Element insertion     :data_structures:<a id="sec-390"></a>
+# Doubly-linked list/Element insertion<a id="sec-390"></a>
 
 Doubly-Linked List (element)
 
@@ -28456,7 +28457,7 @@ impl<T> LinkedList<T> {
 }
 ```
 
-# Echo server     :networking_and_web_interaction:<a id="sec-391"></a>
+# Echo server<a id="sec-391"></a>
 
 Create a network service that sits on TCP port 12321, which accepts connections on that port, and which echoes complete lines (using a carriage-return/line-feed sequence as line separator) back to clients. No error handling is required. For the purposes of testing, it is only necessary to support connections from localhost (127.0.0.1 or perhaps ::1). Logging of connection information to standard output is recommended.
 
@@ -28496,7 +28497,7 @@ fn handle_client(stream: TcpStream) {
  
 ```
 
-# Word count     :text_processing:<a id="sec-392"></a>
+# Word count<a id="sec-392"></a>
 
 Task
 
@@ -28567,7 +28568,7 @@ it           6534
 
 ```
 
-# Sutherland-Hodgman polygon clipping     :geometry:graphics_algorithms:<a id="sec-393"></a>
+# Sutherland-Hodgman polygon clipping<a id="sec-393"></a>
 
 The   Sutherland-Hodgman clipping algorithm   finds the polygon that is the intersection between an arbitrary polygon (the “subject polygon”) and a convex polygon (the “clip polygon”).
 
@@ -28672,7 +28673,7 @@ Polygon([
 
 ```
 
-# MD4     :checksums:<a id="sec-394"></a>
+# MD4<a id="sec-394"></a>
 
 Find the MD4 message digest of a string of octets. Use the ASCII encoded string “Rosetta Code” (without quotes). You may either call an MD4 library, or implement MD4 in your language.
 
@@ -28999,7 +29000,7 @@ fn main() {
 }
 ```
 
-# Bitcoin/address validation     :checksums:<a id="sec-397"></a>
+# Bitcoin/address validation<a id="sec-397"></a>
 
 Task
 
@@ -29096,7 +29097,7 @@ false
 
 ```
 
-# Make directory path     :file_system_operations:<a id="sec-398"></a>
+# Make directory path<a id="sec-398"></a>
 
 Task
 
@@ -29116,7 +29117,7 @@ fn main() {
 }
 ```
 
-# Pattern matching     :data_structures:<a id="sec-399"></a>
+# Pattern matching<a id="sec-399"></a>
 
 Some languages offer direct support for algebraic data types and pattern matching on them. While this of course can always be simulated with manual tagging and conditionals, it allows for terse code which is easy to read, and can represent the algorithm directly.
 
@@ -29290,7 +29291,7 @@ fn main() {
 }
 ```
 
-# K-means++ clustering     :probability_and_statistics:<a id="sec-402"></a>
+# K-means++ clustering<a id="sec-402"></a>
 
 K-means++ clustering
 
@@ -29640,7 +29641,7 @@ k       centroid                     mean dist    pop
 
 ```
 
-# Cut a rectangle     :geometry:<a id="sec-403"></a>
+# Cut a rectangle<a id="sec-403"></a>
 
 A given rectangle is made from m × n squares. If m and n are not both odd, then it is possible to cut a path through the rectangle along the square edges such that the rectangle splits into two connected pieces with the same shape (after rotating one of the pieces by 180°). All such paths for 2 × 2 and 4 × 3 rectangles are shown below.
 
@@ -29728,7 +29729,7 @@ fn main() {
  
 ```
 
-# Check output device is a terminal     :terminal_control:initialization:hardware:<a id="sec-404"></a>
+# Check output device is a terminal<a id="sec-404"></a>
 
 Task
 
@@ -29753,7 +29754,7 @@ fn main() {
 }
 ```
 
-# Minesweeper game     :games:<a id="sec-405"></a>
+# Minesweeper game<a id="sec-405"></a>
 
 There is an n by m grid that has a random number (between 10% to 20% of the total number of tiles, though older implementations may use 20%..60% instead) of randomly placed mines that need to be found.
 
@@ -30135,7 +30136,7 @@ Goodbye
 
 ```
 
-# Euler's identity     :wikipediasourced:<a id="sec-406"></a>
+# Euler's identity<a id="sec-406"></a>
 
 This page uses content from Wikipedia. The original article was at Euler's<sub>identity</sub>. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
@@ -30226,7 +30227,7 @@ Output:
 
 ```
 
-# Find the intersection of a line with a plane     :collision_detection:geometry:<a id="sec-407"></a>
+# Find the intersection of a line with a plane<a id="sec-407"></a>
 
 Task
 
@@ -30343,7 +30344,7 @@ fn main() {
  
 ```
 
-# Create an object at a given address     :basic_data_operations:<a id="sec-408"></a>
+# Create an object at a given address<a id="sec-408"></a>
 
 In systems programing it is sometimes required to place language objects at specific memory locations, like I/O registers, hardware interrupt vectors etc.
 
@@ -30377,7 +30378,7 @@ fn main() {
 }
 ```
 
-# Nonoblock     :puzzles:<a id="sec-409"></a>
+# Nonoblock<a id="sec-409"></a>
 
 Nonoblock is a chip off the old Nonogram puzzle.
 
@@ -30574,7 +30575,7 @@ No solutions.
 
 ```
 
-# Simulate input/Keyboard     :gui:testing:<a id="sec-410"></a>
+# Simulate input/Keyboard<a id="sec-410"></a>
 
 Send simulated keystrokes to a GUI window, or terminal. You should specify whether the target may be externally created (i.e., if the keystrokes are going to an application other than the application that is creating them).
 
@@ -30824,7 +30825,7 @@ extern crate edit_distance;
 edit_distance("rosettacode", "raisethysword");
 ```
 
-# Apply a digital filter (direct form II transposed)     :digital_signal_processing:<a id="sec-414"></a>
+# Apply a digital filter (direct form II transposed)<a id="sec-414"></a>
 
 Digital filters are used to apply a mathematical operation to a sampled signal. One of the common formulations is the "direct form II transposed" which can represent both infinite impulse response (IIR) and finite impulse response (FIR) filters, as well as being more numerically stable than other forms. [1]
 
@@ -30951,7 +30952,7 @@ output:
 
 ```
 
-# Check input device is a terminal     :hardware:terminal_control:initialization:<a id="sec-415"></a>
+# Check input device is a terminal<a id="sec-415"></a>
 
 Task
 
@@ -30976,7 +30977,7 @@ fn main() {
 }
 ```
 
-# Mind boggling card trick     :puzzles:<a id="sec-416"></a>
+# Mind boggling card trick<a id="sec-416"></a>
 
 Matt Parker of the "Stand Up Maths channel" has a   YouTube video   of a card trick that creates a semblance of order from chaos.
 
@@ -31142,7 +31143,7 @@ Output:
 "a b cd"
 ```
 
-# Simulate input/Mouse     :testing:gui:<a id="sec-418"></a>
+# Simulate input/Mouse<a id="sec-418"></a>
 
 Works with: Rust version 1.25+
 
@@ -31176,7 +31177,7 @@ fn main() {
 }
 ```
 
-# Draw a pixel     :simple:gui:basic_language_learning:<a id="sec-419"></a>
+# Draw a pixel<a id="sec-419"></a>
 
 Task
 
@@ -31230,7 +31231,7 @@ fn main() {
  
 ```
 
-# Banker's algorithm     :wikipediasourced:<a id="sec-420"></a>
+# Banker's algorithm<a id="sec-420"></a>
 
 This page uses content from Wikipedia. The original article was at Banker's algorithm. The list of authors can be seen in the page history. As with Rosetta Code, the text of Wikipedia is available under the GNU FDL. (See links for details on variance)
 
