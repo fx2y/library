@@ -27,11 +27,11 @@
 **** investment grant ([[https://angin.id/][indonesia]] [[https://www.expo2020dubai.com/expo-live/Innovation][until-2020]])
 ** professional
 *** computer-programming
-**** [[https://rosettacode.org/wiki/Category:Programming_Tasks][programming-tasks]] ([[https://rosettacode.org/wiki/Category:Basic_language_learning][basic-language-learning]] [[https://rosettacode.org/wiki/Category:Solutions_by_Programming_Task][per-category]] [[https://github.com/fx2y/programming-tasks][my-personal-organized-content]])
+**** [[https://rosettacode.org/wiki/Category:Programming_Tasks][programming-tasks]] ([[https://rosettacode.org/wiki/Category:Basic_language_learning][basic-language-learning]] [[https://rosettacode.org/wiki/Category:Solutions_by_Programming_Task][per-category]])
 ***** programming-languages ([[https://github.com/enocom/gopher-reading-list/blob/master/README.md][go]] [[https://github.com/brson/rust-anthology/blob/master/master-list.md][rust]] python [[https://github.com/leonardomso/33-js-concepts/blob/master/README.md][javascript]] kotlin swift clojure nim racket)
 ***** [[https://learnxinyminutes.com/][quickstart]]
 **** algorithms data-structures ([[https://github.com/TheAlgorithms/Python][python]] [[https://github.com/trekhleb/javascript-algorithms/blob/master/README.md][javascript]])
-**** [[https://github.com/tuvtran/project-based-learning/blob/master/README.md][project-based-learning]]  [[https://github.com/danistefanovic/build-your-own-x/blob/master/README.md][build-your-own-x]] [[https://github.com/kanaka/mal][make-a-lisp]]
+**** [[https://github.com/tuvtran/project-based-learning/blob/master/README.md][project-based-learning]] [[https://github.com/danistefanovic/build-your-own-x/blob/master/README.md][build-your-own-x]] [[https://github.com/kanaka/mal][make-a-lisp]]
 **** [[https://github.com/fx2y/devbox/blob/master/README.org][my-personal-devbox]]
 **** [[https://github.com/k88hudson/git-flight-rules/blob/master/README.md][git-flight-rules]]
 **** [[https://www.amazon.com/dp/0984782850][cracking-the-coding-interview]]
@@ -84,7 +84,7 @@
 **** [[https://paperswelove.org/][papers]] ([[https://github.com/zziz/pwc/blob/master/README.md][with-code]])
 **** [[https://intensecrypto.org/public/][cryptography]] ([[https://github.com/google/tink][library]])
 **** security ([[https://github.com/maestron/botnets][tools]])
-*** artificial-intelligence machine-learning
+*** artificial-intelligence
 **** [[http://ai.berkeley.edu/course_schedule.html][artificial-intelligence]] [[http://cs229.stanford.edu/syllabus.html][machine-learning]] ([[https://see.stanford.edu/Course/CS229/47][lectures]])
 **** [[https://machinelearningmastery.com/start-here/][machine-learning-mastery]] ([[https://machinelearningmastery.com/blog/][tutorials]])
 **** [[http://course.fast.ai][fast-ai]]

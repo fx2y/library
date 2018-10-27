@@ -1,0 +1,70 @@
+* programming tasks
+** basic language learning
+*** simple
+*** basic data operations
+*** selection short circuit console program basics
+*** type system
+*** arithmetic operations
+*** radices
+*** syntax elements
+** games
+** geometry
+** string manipulation
+** puzzles
+** text processing
+** classic cs problems and programs
+** programming environment operations
+** data structures
+** mathematics
+** recursion
+** iteration
+** terminal control
+** networking and web interaction
+** date and time
+** gui
+** initialization
+** object oriented
+** mathematical operations
+** file handling
+** functions and subroutines
+** checksums
+** sorting
+** encryption
+** temporal media
+** concurrency
+** arithmetic
+** randomness
+** xml
+** rosetta code related
+** image processing
+** graphics algorithms
+** constructive solid geometry
+** programming language concepts
+** 3d
+** animation
+** conditional loops
+** database operations
+** internet protocol
+** logic
+** routing algorithms
+** scope
+** compression
+** sciences
+** geometric primitives
+** keyboard input
+** memory management
+** software engineering
+** speech synthesis
+** streams
+** digital signal processing
+** environment variables
+** game engine
+** geometric subtraction
+** joystick
+** non parametric generators
+** pointing devices
+** regular expressions
+** signal handling
+** flow control
+** screen capture
+** speech recognition

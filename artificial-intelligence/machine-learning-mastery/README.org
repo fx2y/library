@@ -1,40 +1,124 @@
 * foundations
-** how-do-i-get-started
-*** adjust-mindset
-*** pick-a-process
-*** pick-a-tool
-*** practice-on-datasets
-*** build-a-portfolio
-** applied-machine-learning-process
-*** define-your-problem
-*** prepare-your-data
-*** spot-check-algorithms
-*** improve-results
-*** present-results
-** linear-algebra
-*** discover-what-linear-algebra-is
-*** discover-why-linear-algebra-is-important-for-machine-learning
-*** dive-into-linear-algebra-topics
-*** linear-algebra-in-python
+** how do i get started
+*** adjust mindset
+**** what is holding you back from your machine learning goals
+**** why machine learning does not have to be so hard
+**** how to think about machine learning
+**** find your machine learning tribe
+*** pick a process
+**** applied machine learning process
+*** pick a tool
+**** beginners: weka workbench
+**** intermediate: python ecosystem
+**** advanced: r platform
+**** best programming languages for machine learning
+*** practice on datasets
+**** practice machine learning with small in-memory datasets
+**** tour of real-world machine learning problems
+**** work on machine learning problems that matter to you
+*** build a portfolio
+**** build a machine learning portfolio
+**** get paid to apply machine learning
+**** machine learning for money
+*** more
+**** the machine learning mastery method
+**** machine learning for programmers
+** applied machine learning process
+*** define your problem
+**** how to define your machine learning problem
+*** prepare your data
+**** how to prepare data for machine learning
+**** how to identify outliers in your data
+**** improve model accuracy with data pre-processing
+**** discover feature engineering
+**** an introduction to feature selection
+**** tactics to combat imbalanced classes in your machine learning dataset
+**** data leakage in machine learning
+*** spot check algorithms
+**** how to evaluate machine learning algorithms
+**** why you should be spot-checking algorithms on your machine learning problems
+**** how to choose the right test options when evaluating machine learning algorithms
+**** a data-driven approach to choosing machine learning algorithms
+*** improve results
+**** how to improve machine learning results
+**** machine learning performance improvement cheat sheet
+**** how to improve deep learning performance
+*** present results
+**** how to use machine learning results
+**** how to train a final machine learning model
+**** how to deploy your predictive model to production
+*** summary
+**** applied machine learning process
+**** how to use a machine learning checklist to get accurate predictions
+** linear algebra
+*** discover what linear algebra is
+**** a gentle introduction to linear algebra
+*** discover why linear algebra is important for machine learning
+**** 5 reasons to learn linear algebra for machine learning
+**** linear algebra for machine learning
+*** dive into linear algebra topics
+**** linear algebra for machine learning mini-course
+**** linear algebra for machine learning
+*** linear algebra in python
+**** introduction to n-dimensional arrays in python
+**** how to index, slice and reshape numpy arrays
 *** vectors
+**** introduction to vectors
+**** introduction to vector norms
 *** matrices
-*** matrix-factorization
-** statistical-methods
-*** discover-what-statistical-methods-are
-*** discover-why-statistical-methods-are-important-for-machine-learning
-*** dive-into-the-topics-of-statistical-methods
-*** summary-statistics
-*** resampling-methods
-*** hypothesis-tests
-*** estimation-statistics
+**** introduction to matrices and matrix arithmetic
+**** introduction to matrix types in linear algebra
+*** matrix factorization
+**** introduction to matrix factorization
+**** introduction to eigendecomposition
+** statistical methods
+*** discover what statistical methods are
+**** what is statistics (and why is it important in machine learning)
+*** discover why statistical methods are important for machine learning
+**** the close relationship between applied statistics and machine learning
+**** 10 examples of how to use statistical methods in a machine learning project
+*** dive into the topics of statistical methods
+**** statistics for machine learning (7-day mini-course)
+**** statistical methods for machine learning
+*** summary statistics
+**** introduction to the 5 number summary
+**** introduction to data visualization
+*** resampling methods
+**** introduction to the bootstrap
+**** introduction to cross-validation
+*** hypothesis tests
+**** 15 hypothesis tests (cheat sheet)
+**** tests for comparing algorithms
+*** estimation statistics
+**** introduction to estimation statistics
+**** introduction to confidence intervals
 * beginner
-** understand-machine-learning-algorithms
-*** discover-the-different-types-of-machine-learning-algorithms
-*** discover-the-foundations-of-machine-learning-algorithms
-*** discover-how-top-machine-learning-algorithms-work
-*** linear-algorithms
-*** nonlinear-algorithms
-*** ensemble-algorithms
+** understand machine learning algorithms
+*** discover the different types of machine learning algorithms
+**** a tour of machine learning algorithms
+*** discover the foundations of machine learning algorithms
+**** how machine learning algorithms work
+**** parametric and nonparametric algorithms
+**** supervised and unsupervised algorithms
+**** the bias-variance trade-off
+**** overfitting and underfitting algorithms
+*** discover how top machine learning algorithms work
+**** machine learning algorithms mini-course
+**** master machine learning algorithms
+*** linear algorithms
+**** gradient descent
+**** linear regression
+**** logistic regression
+**** linear disriminant analysis
+*** nonlinear algorithms
+**** classification and regression trees
+**** naive bayes
+**** k-nearest neighbors
+**** learning vector quantization
+**** support vector machines
+*** ensemble algorithms
+**** bagging and random forest
+**** boosting and adaboost
 ** weka-machine-learning-no-code
 *** discover-the-features-of-the-weka-platform
 *** discover-how-to-get-around-the-weka-platform

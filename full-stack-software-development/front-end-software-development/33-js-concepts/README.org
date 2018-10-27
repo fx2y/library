@@ -1,0 +1,34 @@
+* 33 concepts every javascript developer should know
+** call stack
+** primitive types
+** value types and reference types
+** implicit, explicit, nominal, structuring and duck typing
+** \== vs \=== vs typeof
+** function scope, block scope and lexical scope
+** expression vs statement
+** iife, modules and namespaces
+** message queue and event loop
+** settimeout, setinterval and requestanimationframe
+** javasript engines
+** bitwise operators, type arrays and array buffers
+** dom and layout trees
+** factories and classes
+** this, call, apply and bind
+** new, constructor, instanceof and instances
+** prototype inheritance and prototype chain
+** object.create and object.assign
+** map, reduce, filter
+** pure functions, side effects and state mutation
+** closures
+** high order functions
+** recursion
+** collections and generators
+** promises
+** async/await
+** data structures
+** expensive operation and big o notation
+** algorithms
+** inheritance, polymorphism and code reuse
+** design patterns
+** partial applications, currying, compose and pipe
+** clean code
